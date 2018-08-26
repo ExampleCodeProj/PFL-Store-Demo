@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Data
+
+
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-3">
+        <h4>Product List</h4>
+
+        @await Component.InvokeAsync("ProductNav")
+    </div>
+    <div class="col-sm-12 col-md-9">
+        <h4>@Model.Name</h4>
+        <img src="@Model.ImageURL" alt="Alternate Text" />
+        <h6>@Model.Description</h6>
+        @foreach (var location in Model.DeliveredPrices)
+        {
+            if (Model.ShippingMethodDefault == location.DeliveryMethodCode)
+            {
+                <p id="price">Price: @location.Price</p>
+                <p>Domestic US delivery by @location.Description is included in price</p>
+                
+            }
+        }
+        <p>Quantity: @Model.QuantityMinimum</p>
+
+         <form asp-action="CustomerData" asp-controller="Order" method="post" >
+      
+                <input type="hidden" asp-for="Id" value="@Model." />
+                <input asp-for="Name" type="hidden" value="@Model.Name" />
+                <input asp-for="Description" type="hidden" value="@Model.Name" />
+
+                <input asp-for="ImageURL" type="hidden" value="@Model.Name" />
+                <input asp-for="QuantityMinimum" type="hidden" value="@Model.QuantityMinimum" class="form-control" />
+                <input type="submit" value="Order" class="btn btn-default" />
+      
+        </form>
+        </div>
+</div>

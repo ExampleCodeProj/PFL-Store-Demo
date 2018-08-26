@@ -3,7 +3,7 @@
             @foreach (var product in Model.OrderBy(p => p.Description))
             {
                 <li>
-                    <a asp-action="show" asp-controller="Home" asp-route-id="@product.Id)" class="">
+                    <a asp-action="show" asp-controller="Product" asp-route-id="@product.ProductID" class="">
                         @product.Name
                     </a>
                 </li>

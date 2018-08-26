@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace PflStoreProject.Models
@@ -40,19 +41,18 @@ namespace PflStoreProject.Models
             }
         }
 
-        public async Task<ProductDetailsViewModel> GetProductById(string id) { 
+        public async Task<Data> GetProductById(string id) { 
         
             using (HttpClient client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Authorization =
                     new AuthenticationHeaderValue("Basic", EncodedCredentials);
-                var response = await client.GetAsync($"https://testapi.pfl.com/products/{id}?apikey=136085");
+                var response = await client.GetAsync($"https://testapi.pfl.com/products?id={id}&apikey=136085");
                 response.EnsureSuccessStatusCode();
                 var stringResult = await response.Content.ReadAsStringAsync();
+                var product = JsonConvert.DeserializeObject<ProductsDetail>(stringResult);
 
-                JObject productJson = JObject.Parse(stringResult);
-                var details = productJson["results"]["data"].ToObject<ProductDetailsViewModel>();
-                return details;
+                return product.Results.Data;
 
             }
         }

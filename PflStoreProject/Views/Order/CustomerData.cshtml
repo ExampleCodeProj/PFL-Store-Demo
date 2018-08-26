@@ -1,0 +1,70 @@
+﻿@model OrderCustomerDataViewModel
+@{
+    ViewData["Title"] = "Customer Information";
+}
+
+
+
+
+<div class="page">
+    <h4>Shipping Information</h4>
+
+    <p class="heading-text">Please enter name and shipping information for order. Fields marked with <font color="#cc3300">*</font> are required.</p>
+
+
+
+    <div class="col-md-6">
+        <form class="form-panel" asp-action="ShipInfo" asp-controller="Checkout">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <font color="#cc3300">*</font><label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <font color="#cc3300">*</font><label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <font color="#cc3300">*</font> <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <font color="#cc3300">*</font><label asp-for="AddressLine1" class="control-label"></label>
+                <input asp-for="AddressLine1" class="form-control" />
+                <span asp-validation-for="AddressLine1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddressLine2" class="control-label"></label>
+                <input asp-for="AddressLine2" class="form-control" />
+                <span asp-validation-for="AddressLine2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <font color="#cc3300">*</font> <label asp-for="City" class="control-label"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <font color="#cc3300">*</font><label asp-for="State" class="control-label"></label>
+                <select asp-for="State" class="form-control"><option value="">Choose</option><option data-country="1" value="Alabama">Alabama</option><option data-country="1" value="Alaska">Alaska</option><option data-country="1" value="Arizona">Arizona</option><option data-country="1" value="Arkansas">Arkansas</option><option data-country="1" value="California">California</option><option data-country="1" value="Colorado">Colorado</option><option data-country="1" value="Connecticut">Connecticut</option><option data-country="1" value="Delaware">Delaware</option><option data-country="1" value="District of Columbia">District of Columbia</option><option data-country="1" value="Florida">Florida</option><option data-country="1" value="Georgia">Georgia</option><option data-country="1" value="Hawaii">Hawaii</option><option data-country="1" value="Idaho">Idaho</option><option data-country="1" value="Illinois">Illinois</option><option data-country="1" value="Indiana">Indiana</option><option data-country="1" value="Iowa">Iowa</option><option data-country="1" value="Kansas">Kansas</option><option data-country="1" value="Kentucky">Kentucky</option><option data-country="1" value="Louisiana">Louisiana</option><option data-country="1" value="Maine">Maine</option><option data-country="1" value="Maryland">Maryland</option><option data-country="1" value="Massachusetts">Massachusetts</option><option data-country="1" value="Michigan">Michigan</option><option data-country="1" value="Minnesota">Minnesota</option><option data-country="1" value="Mississippi">Mississippi</option><option data-country="1" value="Missouri">Missouri</option><option data-country="1" value="Montana">Montana</option><option data-country="1" value="Nebraska">Nebraska</option><option data-country="1" value="40">Nevada</option><option data-country="1" value="New Hampshire">New Hampshire</option><option data-country="1" value="New Jersey">New Jersey</option><option data-country="1" value="New Mexico">New Mexico</option><option data-country="1" value="New York">New York</option><option data-country="1" value="North Carolina">North Carolina</option><option data-country="North Dakota" value="North Dakota">North Dakota</option><option data-country="1" value="Ohio">Ohio</option><option data-country="1" value="Oklahoma">Oklahoma</option><option data-country="1" value="Oregon">Oregon</option><option data-country="1" value="Pennsylvania">Pennsylvania</option><option data-country="1" value="Puerto Rico">Puerto Rico</option><option data-country="1" value="Rhode Island">Rhode Island</option><option data-country="1" value="South Carolina">South Carolina</option><option data-country="1" value="South Dakota">South Dakota</option><option data-country="1" value="Tennessee">Tennessee</option><option data-country="1" value="Texas">Texas</option><option data-country="1" value="Utah">Utah</option><option data-country="1" value="Vermont">Vermont</option><option data-country="1" value="Virginia">Virginia</option><option data-country="1" value="Washington">Washington</option><option data-country="1" value="West Virginia">West Virginia</option><option data-country="1" value="Wisconsin">Wisconsin</option><option data-country="1" value="Wyoming">Wyoming</option></select>
+
+                <span asp-validation-for="State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <font color="#cc3300">*</font><label asp-for="Zipcode" class="control-label"></label>
+                <input maxlength="5" asp-for="Zipcode" class="form-control" />
+                <span asp-validation-for="Zipcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Continue Checkout" class="btn btn-block tp-btn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-controller="Product">Back to Store</a>
+</div>

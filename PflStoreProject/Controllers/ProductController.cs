@@ -12,12 +12,20 @@ using PflStoreProject.Models;
 
 namespace PflStoreProject.Controllers
 {
-    public class HomeController : Controller
+    public class ProductController : Controller
     {
         private HttpClientService _client = new HttpClientService();
 
+
+
         public IActionResult Index() => View();
 
+
+//        public IActionResult Show(string id)
+//        {
+//            var productDetails = _client.GetProductById(id);
+//            return View(productDetails.Result);
+//        }
         public IActionResult Show(string id)
         {
             var productDetails = _client.GetProductById(id);
