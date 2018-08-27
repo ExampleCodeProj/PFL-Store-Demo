@@ -3,7 +3,9 @@
     ViewData["Title"] = "Home Page";
 }
 
+
 @model Data
+
 
 
 
@@ -27,11 +29,24 @@
                 
             }
         }
+        @if (Model.HasTemplate)
+{ <h4>Fill in the following fields to customize your order</h4>
+            foreach (var field in Model.TemplateFields.Fieldlist.Field)
+             {
+                 <div class="form-group">
+                 <label class="" for="@field.Htmlfieldname">@field.Fieldname</label>
+                 <input class="form-control"  id="@field.Htmlfieldname" name="@field.Htmlfieldname"type="text"/>
+                                                                         </div>
+             }
+        }
+        
+        
         <p>Quantity: @Model.QuantityMinimum</p>
 
-         <form asp-action="CustomerData" asp-controller="Order" method="post" >
+         <form asp-action="CustomerDataForm" asp-controller="Order" method="post" >
+         
       
-                <input type="hidden" asp-for="Id" value="@Model." />
+                <input type="hidden" asp-for="Id" value="@Model.Id" />
                 <input asp-for="Name" type="hidden" value="@Model.Name" />
                 <input asp-for="Description" type="hidden" value="@Model.Name" />
 

@@ -2,7 +2,7 @@
 
 namespace PflStoreProject.Models
 {
-    class OrderItemData
+    public class OrderItemData
     {
         public short ItemSequenceNumber { get; set; }
         public int ProductId { get; set; }

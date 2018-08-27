@@ -25,16 +25,17 @@ namespace PflStoreProject.Models
         [Display(Name = "Phone:")]
         public long? Phone { get; set; }
 
-
-
-
+        [Required(ErrorMessage = "Required")]
+        [Display(Name = "Email:")]
+        [EmailAddress(ErrorMessage = "Invalid email address")]
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "Required")]
         [Display(Name = "Address Line 1:")]
-        public string AddressLine1 { get; set; }
+        public string Address1 { get; set; }
 
         [Display(Name = "Address Line 2 (Apt, Suite, Floor, Unit):")]
-        public string AddressLine2 { get; set; }
+        public string Address2 { get; set; }
 
         [Required(ErrorMessage = "Required")]
         [Display(Name = "City:")]
@@ -47,6 +48,6 @@ namespace PflStoreProject.Models
         [Display(Name = "5-digit Zipcode:")]
         [RegularExpression(@"^\d{5}([\-]?\d{4})?$", ErrorMessage = "Invalid zipcode")]
         [Required(ErrorMessage = "Required")]
-        public int? Zipcode { get; set; }
+        public int PostalCode { get; set; }
     }
 }

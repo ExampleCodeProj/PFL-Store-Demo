@@ -2,7 +2,7 @@
 
 namespace PflStoreProject.Models
 {
-    class NewOrderPayload
+    public class NewOrderPayload
     {
         public string OrderNumber
         {
@@ -34,12 +34,12 @@ namespace PflStoreProject.Models
             set;
         }
     }
-    class OrderTemplateData
+    public class OrderTemplateData
     {
         public string TemplateDataName { get; set; }
         public string TemplateDataValue { get; set; }
     }
-    class OrderShipmentData
+    public class OrderShipmentData
     {
         public short ShipmentSequenceNumber
         {

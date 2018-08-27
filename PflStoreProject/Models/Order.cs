@@ -79,7 +79,7 @@ namespace PflStoreProject.Models
         public string value { get; set; }
     }
 
-    public class RootObject
+    public class Order
     {
         public string partnerOrderReference { get; set; }
         public OrderCustomer orderCustomer { get; set; }

@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 
 namespace PflStoreProject.Infrastructure
 {
-    public static class JsonSessionExt
+    public static class JsonSessionExtentions
     {
         public static void SetJson(this ISession session, string key, object value)
         {

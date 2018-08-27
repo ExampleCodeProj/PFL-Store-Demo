@@ -14,6 +14,7 @@ namespace PflStoreProject.Controllers
 {
     public class ProductController : Controller
     {
+        // TODO: pass in through DI
         private HttpClientService _client = new HttpClientService();
 
 
@@ -21,11 +22,7 @@ namespace PflStoreProject.Controllers
         public IActionResult Index() => View();
 
 
-//        public IActionResult Show(string id)
-//        {
-//            var productDetails = _client.GetProductById(id);
-//            return View(productDetails.Result);
-//        }
+
         public IActionResult Show(string id)
         {
             var productDetails = _client.GetProductById(id);

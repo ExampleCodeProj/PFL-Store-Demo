@@ -56,11 +56,7 @@ namespace PflStoreProject.Models
                 set;
             }
 
-            public string CountryCode
-            {
-                get;
-                set;
-            }
+        public string CountryCode { get; set; } = "US";
 
             public string Email
             {
