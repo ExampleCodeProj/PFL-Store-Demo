@@ -19,6 +19,8 @@ namespace PflStoreProject.Models
         public string Time { get; set; }
         [JsonProperty("statusCode")]
         public int StatusCode { get; set; }
+        [JsonProperty("duration")]
+        public int Duration { get; set; }
     }
     public class Results
     {
@@ -33,14 +35,18 @@ namespace PflStoreProject.Models
     {
         [JsonProperty("id")]
         public int Id { get; set; }
+        [JsonProperty("sku")]
+        public object Sku { get; set; }
         [JsonProperty("name")]
         public string Name { get; set; }
         [JsonProperty("description")]
         public string Description { get; set; }
-        [JsonProperty("hasTemplate")]
-        public bool HasTemplate { get; set; }
         [JsonProperty("imageURL")]
         public string ImageURL { get; set; }
+        [JsonProperty("images")]
+        public List<object> Images { get; set; }
+        [JsonProperty("files")]
+        public List<object> Files { get; set; }
         [JsonProperty("quantityDefault")]
         public int? QuantityDefault { get; set; }
         [JsonProperty("quantityMinimum")]
@@ -51,10 +57,24 @@ namespace PflStoreProject.Models
         public int? QuantityIncrement { get; set; }
         [JsonProperty("shippingMethodDefault")]
         public string ShippingMethodDefault { get; set; }
+        [JsonProperty("emailTemplateId")]
+        public object EmailTemplateId { get; set; }
+        [JsonProperty("hasTemplate")]
+        public bool HasTemplate { get; set; }
+        [JsonProperty("templateFields")]
+        public object TemplateFields { get; set; }
+        [JsonProperty("lastUpdated")]
+        public DateTime LastUpdated { get; set; }
+        [JsonProperty("customValues")]
+        public List<object> CustomValues { get; set; }
         [JsonProperty("deliveredPrices")]
         public List<DeliveredPrice> DeliveredPrices { get; set; }
-        [JsonProperty("templateFields")]
-        public TemplateFields TemplateFields { get; set; }
+        [JsonProperty("productionSpeeds")]
+        public List<ProductionSpeed> ProductionSpeeds { get; set; }
+        [JsonProperty("productFormat")]
+        public string ProductFormat { get; set; }
+        [JsonProperty("productRestrictionType")]
+        public object ProductRestrictionType { get; set; }
     }
     public class DeliveredPrice
     {
@@ -62,55 +82,25 @@ namespace PflStoreProject.Models
         public string DeliveryMethodCode { get; set; }
         [JsonProperty("description")]
         public string Description { get; set; }
-        [JsonProperty("isDefault")]
-        public bool IsDefault { get; set; }
-        [JsonProperty("locationType")]
-        public string LocationType { get; set; }
         [JsonProperty("price")]
         public double Price { get; set; }
         [JsonProperty("country")]
-        public string Country { get; set; }
+        public object Country { get; set; }
         [JsonProperty("countryCode")]
-        public string CountryCode { get; set; }
+        public object CountryCode { get; set; }
         [JsonProperty("created")]
         public DateTime Created { get; set; }
+        [JsonProperty("locationType")]
+        public string LocationType { get; set; }
+        [JsonProperty("isDefault")]
+        public bool IsDefault { get; set; }
     }
-    public class TemplateFields
+    public class ProductionSpeed
     {
-        [JsonProperty("fieldlist")]
-        public Fieldlist Fieldlist { get; set; }
+        [JsonProperty("days")]
+        public int Days { get; set; }
+        [JsonProperty("isDefault")]
+        public bool IsDefault { get; set; }
     }
-    public class Fieldlist
-    {
-        [JsonProperty("field")]
-        public List<Field> Field { get; set; }
-    }
-    public class Field
-    {
-        [JsonProperty("required")]
-        public string Required { get; set; }
-        [JsonProperty("visible")]
-        public string Visible { get; set; }
-        [JsonProperty("type")]
-        public string Type { get; set; }
-        [JsonProperty("subtype")]
-        public string Subtype { get; set; }
-        [JsonProperty("fieldname")]
-        public string Fieldname { get; set; }
-        [JsonProperty("prompt")]
-        public List<Prompt> Prompt { get; set; }
-        [JsonProperty("default")]
-        public string Default { get; set; }
-        [JsonProperty("orgvalue")]
-        public string Orgvalue { get; set; }
-        [JsonProperty("htmlfieldname")]
-        public string Htmlfieldname { get; set; }
-    }
-    public class Prompt
-    {
-        [JsonProperty("language")]
-        public string Language { get; set; }
-        [JsonProperty("text")]
-        public string Text { get; set; }
-    }
+
 }

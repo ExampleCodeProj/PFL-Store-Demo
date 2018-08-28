@@ -9,12 +9,12 @@
 <div class="page">
     <h4>Shipping Information</h4>
 
-    <p class="heading-text">Please enter name and shipping information for order. Fields marked with <font color="#cc3300">*</font> are required.</p>
+    <p class="heading-text">Please enter your name and contact information for this order. Fields marked with <font color="#cc3300">*</font> are required.</p>
 
 
 
     <div class="col-md-6">
-        <form class="form-panel" asp-action="CustomerData" asp-controller="Order">
+        <form class="form-panel" asp-action="CustomerData" asp-controller="Order" method="POST">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <font color="#cc3300">*</font><label asp-for="FirstName" class="control-label"></label>

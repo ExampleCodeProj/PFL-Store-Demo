@@ -7,13 +7,18 @@
 
 
 
-<div class="row">
-    <div class="col-sm-12 col-md-3 col-lg-3">
-        <h4>Product List</h4>
 
-        @await Component.InvokeAsync("ProductNav")
-    </div>
-    <div class="col-sm-12 col-md-9">
-        Product Details
-    </div>
-</div> 
+
+    @foreach(var product in Model)
+    {
+        <a asp-action="Show" asp-controller="Product" asp-route-id="@product.ProductID">
+            <div class="card" style="width: 8rem;">
+                <img class="card-img-top" src="@product.ImageUrl" />
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@product.Description</h6>
+                    <img class="card-img-top" src="@product.ImageUrl" alt="Product Sample"/>
+                </div>
+            </div>
+        </a>
+        }

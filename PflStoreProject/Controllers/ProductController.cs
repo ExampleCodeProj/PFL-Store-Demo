@@ -18,16 +18,24 @@ namespace PflStoreProject.Controllers
         private HttpClientService _client = new HttpClientService();
 
 
-
-        public IActionResult Index() => View();
-
+        public IActionResult Index()
+        {
+            List<ProductViewModel> products = _client.GetProducts().Result;
+            return View(products);
+        }
 
 
         public IActionResult Show(string id)
         {
-            var productDetails = _client.GetProductById(id);
-            return View(productDetails.Result);
+            var rawResults = _client.GetProductById(id);
+            //TODO: check for errors
+            var productDetail = rawResults.Result.Results.Data;
+            
+            return View(productDetail);
         }
+
+
+
 
     }
 }

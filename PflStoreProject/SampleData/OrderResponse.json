@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "time": "Monday, August 27, 2018 7:35:52 PM",
+    "statusCode": 200,
+    "duration": 290
+  },
+  "results": {
+    "errors": [],
+    "messages": [],
+    "data": {
+      "orderNumber": "B1000502077",
+      "partnerOrderReference": "342423545",
+      "orderCustomer": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "companyName": "ACME",
+        "address1": "1 Acme Way",
+        "address2": "",
+        "city": "Livingston",
+        "state": "MT",
+        "postalCode": "59047",
+        "countryCode": "US",
+        "email": "jdoe@acme.com",
+        "phone": "1234567890"
+      },
+      "items": [
+        {
+          "itemSequenceNumber": 1,
+          "productID": 9885,
+          "productName": "Ubiquiti Postcards 6x11 EDDM",
+          "quantity": 1000,
+          "itemFile": "http://www.yourdomain.com/files/printReadyArtwork1.pdf",
+          "templateData": null,
+          "itemID": 3000501025,
+          "partnerItemReference": "55555",
+          "itemPrice": {
+            "envelopePrice": 0.0,
+            "mailingPrice": 0.0,
+            "printingCostEach": 0.181,
+            "printPrice": 181.0,
+            "promotionalDiscount": 0.0,
+            "retailFulfillmentPrice": 0.0,
+            "retailPrintPrice": 0.0,
+            "retailReimbursementPrice": 0.0,
+            "retailRushPrice": 0.0,
+            "retailShippingPrice": 0.0,
+            "rushPrice": 95.93,
+            "secondSheetPrice": 0.0,
+            "shipPrice": 30.0,
+            "totalPrice": 306.93,
+            "totalPrintingPrice": 276.93
+          },
+          "productionDays": 2,
+          "templateDataURL": null
+        }
+      ],
+      "shipments": [
+        {
+          "shipmentSequenceNumber": 1,
+          "firstName": "John",
+          "lastName": "Doe",
+          "companyName": "ACME",
+          "address1": "1 Acme Way",
+          "address2": "",
+          "city": "Livingston",
+          "state": "MT",
+          "postalCode": "59047",
+          "countryCode": "US",
+          "phone": "1234567890",
+          "shippingMethod": "FDXG",
+          "returnAddress": null,
+          "description": null,
+          "imbSerialNumber": "004543450"
+        }
+      ],
+      "mailings": null,
+      "payments": null,
+      "itemShipments": null,
+      "webhooks": null,
+      "orderPrices": {
+        "bundleCouponAmount": 0.0,
+        "envelopeTotalPrice": 0.0,
+        "mailingPriceTotal": 0.0,
+        "orderTotalPrice": 306.93,
+        "printPriceTotal": 181.0,
+        "rushTotalPrice": 95.93,
+        "secondSheetTotal": 0.0,
+        "shipPriceTotal": 30.0
+      },
+      "billingVariables": null
+    }
+  }
+}

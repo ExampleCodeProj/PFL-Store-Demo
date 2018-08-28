@@ -1,0 +1,4110 @@
+{
+  "meta": {
+    "time": "Monday, August 27, 2018 6:53:03 PM",
+    "statusCode": 200,
+    "duration": 1101
+  },
+  "results": {
+    "errors": [],
+    "messages": [],
+    "data": [
+      {
+        "id": 12755,
+        "sku": null,
+        "productID": 9876,
+        "name": "Postcards 4x6 Color/Color",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/lob_postcard.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 0.98,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:06.4766667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 31.060000000000002,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:06.4766667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12758,
+        "sku": null,
+        "productID": 9877,
+        "name": "Postcards 5x7 Color/Color",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/testhangtags.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 1.23,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 2.91,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 31.34,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1CP",
+            "description": "1st Class - Presorted",
+            "price": 31.27,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12749,
+        "sku": null,
+        "productID": 9882,
+        "name": "Ubiquiti Vinyl Banner 4'x8'",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/banner.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": 100,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 55.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.3066667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 76.2,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.3066667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 91.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.32",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 111.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.32",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 3,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12745,
+        "sku": null,
+        "productID": 9885,
+        "name": "Business Cards ",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/6x11 postcards api.jpg",
+        "images": [],
+        "quantityDefault": 5000,
+        "quantityMinimum": 1000,
+        "quantityMaximum": 200000,
+        "quantityIncrement": 5000,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 922.65,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:16.4",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 1240.65,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:16.4",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 1470.15,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:16.4",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 1770.15,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:16.4",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "EDDM",
+            "description": "EDDM",
+            "price": 2077.65,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:16.4",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12747,
+        "sku": null,
+        "productID": 9886,
+        "name": "Ubiquiti Yard Signs 16x24",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/yardsign.jpg",
+        "images": [],
+        "quantityDefault": 50,
+        "quantityMinimum": 50,
+        "quantityMaximum": null,
+        "quantityIncrement": 50,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 400.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 400.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 400.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 400.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 400.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 400.0,
+            "country": "Australia",
+            "countryCode": "AU",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 400.0,
+            "country": "Canada",
+            "countryCode": "CA",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 400.0,
+            "country": "Netherlands",
+            "countryCode": "NL",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 400.0,
+            "country": "Norway",
+            "countryCode": "NO",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 400.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 400.0,
+            "country": "Australia",
+            "countryCode": "AU",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 400.0,
+            "country": "Canada",
+            "countryCode": "CA",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 400.0,
+            "country": "Netherlands",
+            "countryCode": "NL",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 400.0,
+            "country": "Norway",
+            "countryCode": "NO",
+            "created": "2017-11-28T17:49:18.3666667",
+            "locationType": "international",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 5,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12761,
+        "sku": null,
+        "productID": 9888,
+        "name": "4x6 18 pt Postcard in Envelope",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/munchery_postcard.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2018-01-30T19:04:38.517",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 1.03,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 1.03,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 1.03,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 1.03,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 66.68,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:04:30.5466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 1.03,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 1.03,
+            "country": "Australia",
+            "countryCode": "AU",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 1.03,
+            "country": "Canada",
+            "countryCode": "CA",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 1.03,
+            "country": "Netherlands",
+            "countryCode": "NL",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 1.03,
+            "country": "Norway",
+            "countryCode": "NO",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 1.03,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 1.03,
+            "country": "Australia",
+            "countryCode": "AU",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 1.03,
+            "country": "Canada",
+            "countryCode": "CA",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 1.03,
+            "country": "Netherlands",
+            "countryCode": "NL",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 1.03,
+            "country": "Norway",
+            "countryCode": "NO",
+            "created": "2018-01-30T12:04:30.5166667",
+            "locationType": "international",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 5,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12750,
+        "sku": null,
+        "productID": 9889,
+        "name": "Ubiquiti Postcards 6x11 Shipped",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/upostcard2.jpg",
+        "images": [],
+        "quantityDefault": 5000,
+        "quantityMinimum": 5000,
+        "quantityMaximum": 200000,
+        "quantityIncrement": 5000,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 550.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.43",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 751.4,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.43",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 896.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.43",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 1086.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:15.43",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12757,
+        "sku": null,
+        "productID": 9895,
+        "name": "Fwd.US 8.5\" x 11\" General Letter in Envelope",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/forwardus.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 6.73,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:42.2266667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12744,
+        "sku": null,
+        "productID": 9896,
+        "name": "LOB Door Hangers 4.25x11",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/lob_doorhanger_die.jpg",
+        "images": [],
+        "quantityDefault": 1000,
+        "quantityMinimum": 100,
+        "quantityMaximum": null,
+        "quantityIncrement": 0,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 277.17,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:52.5233333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 308.33000000000004,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:52.5233333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 330.83000000000004,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:52.5233333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 360.23,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:52.5233333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 5,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 12775,
+        "sku": "010047",
+        "productID": 10047,
+        "name": "3x11.5 Car Magnets",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/testncrforms.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": 50,
+        "quantityIncrement": 25,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:47:39.507",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 105.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:17.68",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "gifts_and_kits",
+        "productRestrictionType": null
+      },
+      {
+        "id": 14250,
+        "sku": null,
+        "productID": 11352,
+        "name": "Tyson Steele testing",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/tysonsteele/thumbnail.jpg",
+        "images": [],
+        "quantityDefault": 1000,
+        "quantityMinimum": 1000,
+        "quantityMaximum": null,
+        "quantityIncrement": 1000,
+        "shippingMethodDefault": "FDX2DA",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 475.39,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:14.7733333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 14252,
+        "sku": null,
+        "productID": 11355,
+        "name": "Care.com Testing",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/careapi/careapithumbnail.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "USPSFC",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:47:39.507",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "USPSFC",
+            "description": "USPS First Class",
+            "price": 11.23,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:31.2266667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 14254,
+        "sku": null,
+        "productID": 11356,
+        "name": "Mathnasium testing",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/mathnasiumapi/parentpack.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "USPSFC",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "USPSFC",
+            "description": "USPS First Class",
+            "price": 14.86,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:53.21",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          },
+          {
+            "days": 2,
+            "isDefault": false
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 14255,
+        "sku": null,
+        "productID": 11357,
+        "name": "Nimble Storage testing",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/nimbleapi/nimbleaggregatepostcard6x9.jpg",
+        "images": [],
+        "quantityDefault": 250,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 411.68999999999994,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:02.0866667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 572.99,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:02.0866667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1CP",
+            "description": "1st Class - Presorted",
+            "price": 556.24,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:02.0866667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 14253,
+        "sku": null,
+        "productID": 11358,
+        "name": "ScaleArc testing",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/testcatelogs.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 10.25,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 28.27,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 41.28,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 58.28,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 57.85,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 57.85,
+            "country": "Australia",
+            "countryCode": "AU",
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 23.85,
+            "country": "Canada",
+            "countryCode": "CA",
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 40.0,
+            "country": "Netherlands",
+            "countryCode": "NL",
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIE",
+            "description": "FedEx International Economy",
+            "price": 48.5,
+            "country": "Norway",
+            "countryCode": "NO",
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "international",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          },
+          {
+            "days": 2,
+            "isDefault": false
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 20406,
+        "sku": null,
+        "productID": 15501,
+        "name": "Test Project - StratEx",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/goat.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 8.58,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:14.5566667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 21613,
+        "sku": "015210",
+        "productID": 16710,
+        "name": "Test FF 1",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/penguin.png",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 17.4,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:07.32",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 21614,
+        "sku": "015211",
+        "productID": 16711,
+        "name": "Test FF 2",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/goat.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 26.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 21615,
+        "sku": "015212",
+        "productID": 16712,
+        "name": "Test FF 3",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/penguin.png",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 21.1,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:10.07",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 25371,
+        "sku": null,
+        "productID": 19005,
+        "name": " UV Coated First Class Pre-Sort 4 x 6 Postcards 4/4 ( min 500)",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/th.jpg",
+        "images": [
+          {
+            "url": "//testapi-public.pfl.com/TOSThumbnails/pflautomation/th.jpg",
+            "width": 480,
+            "height": 360,
+            "type": "thumbnail"
+          }
+        ],
+        "quantityDefault": 500,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:47:39.507",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 244.87,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:02.6633333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "USPS",
+            "description": "USPS Parcel Post",
+            "price": 244.87,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:02.6633333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1CP",
+            "description": "1st Class - Presorted",
+            "price": 301.87,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:02.6633333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 26661,
+        "sku": null,
+        "productID": 20130,
+        "name": "QA Bookmarks",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/screen-shot-2014-03-24-at-8-44-29-pm.png",
+        "images": [
+          {
+            "url": "//testapi-public.pfl.com/TOSThumbnails/pflautomation/screen-shot-2014-03-24-at-8-44-29-pm.png",
+            "width": 300,
+            "height": 225,
+            "type": "thumbnail"
+          },
+          {
+            "url": "//testapi-public.pfl.com/ProductImages/pflautomation/th.jpg",
+            "width": 480,
+            "height": 360,
+            "type": "preview"
+          }
+        ],
+        "quantityDefault": 100,
+        "quantityMinimum": 100,
+        "quantityMaximum": 1000,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 608.62,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.7266667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 626.91,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.7266667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 640.1,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.7266667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 657.35,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.7266667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 759.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.7266667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 26662,
+        "sku": null,
+        "productID": 20132,
+        "name": "QA Brochures",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/screen-shot-2014-03-24-at-8-44-29-pm.png",
+        "images": [
+          {
+            "url": "//testapi-public.pfl.com/TOSThumbnails/pflautomation/screen-shot-2014-03-24-at-8-44-29-pm.png",
+            "width": 300,
+            "height": 225,
+            "type": "thumbnail"
+          },
+          {
+            "url": "//testapi-public.pfl.com/ProductImages/pflautomation/th.jpg",
+            "width": 480,
+            "height": 360,
+            "type": "preview"
+          }
+        ],
+        "quantityDefault": 100,
+        "quantityMinimum": 100,
+        "quantityMaximum": 1000,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 311.77,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.2733333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 336.73,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.2733333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 354.74,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.2733333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 378.28,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.2733333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 468.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.2733333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 26707,
+        "sku": null,
+        "productID": 20135,
+        "name": "QA CD Covers - Aggregate",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/screen-shot-2014-03-24-at-8-44-29-pm.png",
+        "images": [
+          {
+            "url": "//testapi-public.pfl.com/TOSThumbnails/pflautomation/screen-shot-2014-03-24-at-8-44-29-pm.png",
+            "width": 300,
+            "height": 225,
+            "type": "thumbnail"
+          },
+          {
+            "url": "//testapi-public.pfl.com/ProductImages/pflautomation/th.jpg",
+            "width": 480,
+            "height": 360,
+            "type": "preview"
+          }
+        ],
+        "quantityDefault": 100,
+        "quantityMinimum": 1,
+        "quantityMaximum": 10000,
+        "quantityIncrement": 100,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 211.01,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 234.36,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 273.24,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 349.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.4133333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 28235,
+        "sku": null,
+        "productID": 20860,
+        "name": "Mailing Only Test Item",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/pflautomation/6332.breakwhenthrown.png",
+        "images": [
+          {
+            "url": "//testapi-public.pfl.com/TOSThumbnails/pflautomation/6332.Breakwhenthrown.png",
+            "width": 503,
+            "height": 129,
+            "type": "thumbnail"
+          },
+          {
+            "url": "//testapi-public.pfl.com/ProductImages/pflautomation/th.jpg",
+            "width": 480,
+            "height": 360,
+            "type": "preview"
+          }
+        ],
+        "quantityDefault": 1,
+        "quantityMinimum": null,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 32.76,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:52.2433333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35031,
+        "sku": null,
+        "productID": 22784,
+        "name": "POD - $100 75Mbps Double Play DH",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/att/$100-75mbps-double-play-dh_sku017940.jpg",
+        "images": [],
+        "quantityDefault": 500,
+        "quantityMinimum": 100,
+        "quantityMaximum": null,
+        "quantityIncrement": 50,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 92.82,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.1633333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 250.92,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:49:08.1633333",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 250.92,
+            "country": "Australia",
+            "countryCode": "AU",
+            "created": "2017-11-28T17:49:08.1633333",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 159.12,
+            "country": "Canada",
+            "countryCode": "CA",
+            "created": "2017-11-28T17:49:08.1633333",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 199.92,
+            "country": "Netherlands",
+            "countryCode": "NL",
+            "created": "2017-11-28T17:49:08.1633333",
+            "locationType": "international",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXIP",
+            "description": "FedEx International Priority",
+            "price": 220.32,
+            "country": "Norway",
+            "countryCode": "NO",
+            "created": "2017-11-28T17:49:08.1633333",
+            "locationType": "international",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          },
+          {
+            "days": 3,
+            "isDefault": false
+          },
+          {
+            "days": 2,
+            "isDefault": false
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35837,
+        "sku": null,
+        "productID": 23180,
+        "name": "PMC - Prospecting Letter",
+        "description": "Prospecting Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2axa.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:58.2433333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35823,
+        "sku": null,
+        "productID": 23185,
+        "name": "PMC - Customer Retention",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter1axathumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:45.0066667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35822,
+        "sku": null,
+        "productID": 23187,
+        "name": "PMC - Customer Retention Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoflyer1axathumb.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 142.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1333333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 407.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1333333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 599.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1333333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 849.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1333333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35836,
+        "sku": null,
+        "productID": 23188,
+        "name": "PMC - New Customer Onboarding Kit",
+        "description": "New Customer Onboarding Kit",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/untitled-1jh.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 142.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:58.1966667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 407.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:58.1966667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 599.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:58.1966667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 849.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:58.1966667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35807,
+        "sku": null,
+        "productID": 23189,
+        "name": "PMC - Prospecting Letter",
+        "description": "Prospecting Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2thumbbbt.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.77,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:27.79",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35806,
+        "sku": null,
+        "productID": 23190,
+        "name": "PMC - BASE PROD - FLYER 8.5x11 4/4",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoflyerthumbbbt.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 142.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:28.3066667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 407.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:28.3066667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 599.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:28.3066667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 849.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:28.3066667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35808,
+        "sku": null,
+        "productID": 23191,
+        "name": "PMC - BASE PROD - POSTCARD 6x9 4/4",
+        "description": "",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard1.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": 1,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 5.9,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:26.0066667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35810,
+        "sku": null,
+        "productID": 23192,
+        "name": "PMC - BC Customer Retention",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter1bc.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.77,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:38.4766667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35814,
+        "sku": null,
+        "productID": 23193,
+        "name": "PMC - BC Prospecting Letter",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2bc.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.71",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35809,
+        "sku": null,
+        "productID": 23194,
+        "name": "PMC - BC Customer Retention Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer1bc.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 142.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:29.3666667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 407.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:29.3666667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 599.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:29.3666667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 849.0,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:29.3666667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35813,
+        "sku": null,
+        "productID": 23195,
+        "name": "PMC - BC Prospecting Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer2bc.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.6466667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.6466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.6466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.6466667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35811,
+        "sku": null,
+        "productID": 23196,
+        "name": "PMC - BC Customer Retention Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard1bc.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.54",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35812,
+        "sku": null,
+        "productID": 23197,
+        "name": "PMC - BC Event Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard2bc.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:36.8366667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35826,
+        "sku": null,
+        "productID": 23198,
+        "name": "PMC - Demo Letter 2 - AXA",
+        "description": "Demo Letter 2",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2axa.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:45.2266667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35824,
+        "sku": null,
+        "productID": 23199,
+        "name": "PMC - Demo Flyer 1 - AXA",
+        "description": "Demo Flyer 1",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoflyer1axathumb.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.32",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.32",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.32",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.32",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35805,
+        "sku": null,
+        "productID": 23200,
+        "name": "PMC - AT&T Prospecting",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletterattthumbjpg.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:26.3966667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "digital_content",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35800,
+        "sku": null,
+        "productID": 23201,
+        "name": "PMC - AT&T Customer Retention",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/attl1thumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:16.8366667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35804,
+        "sku": null,
+        "productID": 23202,
+        "name": "PMC - AT&T Prospecting",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer2attthumb.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:27.6466667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:27.6466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:27.6466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:27.6466667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35825,
+        "sku": null,
+        "productID": 23203,
+        "name": "PMC - Demo Letter 1 - AXA",
+        "description": "Demo Letter 1",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter1axathumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:44.4133333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35799,
+        "sku": null,
+        "productID": 23204,
+        "name": "PMC - AT&T Customer Retention",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/attthumbflyer1.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:17.9466667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:17.9466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:17.9466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:17.9466667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35801,
+        "sku": null,
+        "productID": 23206,
+        "name": "PMC - AT&T Customer Retention",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard1attthumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:19.0566667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35803,
+        "sku": null,
+        "productID": 23207,
+        "name": "PMC - AT&T Offer Email",
+        "description": "AT&T Offer Email",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/attemailthumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 5.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:27.18",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35802,
+        "sku": null,
+        "productID": 23208,
+        "name": "PMC - AT&T Event Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard2attthumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:26.6333333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35816,
+        "sku": null,
+        "productID": 23209,
+        "name": "PMC - Cumulus Customer Retention",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/cumulusthumb2.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.1633333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35815,
+        "sku": null,
+        "productID": 23210,
+        "name": "PMC - Cumulus Customer Retention Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer1thumb-jh.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:39.46",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:39.46",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:39.46",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:39.46",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35817,
+        "sku": null,
+        "productID": 23211,
+        "name": "PMC - Cumulus Customer Retention Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard1-output-thumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:37.1166667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35819,
+        "sku": null,
+        "productID": 23212,
+        "name": "PMC - Cumulus Prospecting Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer2-output-thumb.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1466667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1466667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:46.1466667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35828,
+        "sku": null,
+        "productID": 23213,
+        "name": "PMC - Life Insurance Email ",
+        "description": "Life Insurance Email ",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/cumulusemailthumb2.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 5.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:47.7733333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35821,
+        "sku": null,
+        "productID": 23214,
+        "name": "PMC - Cumulus Prospecting Letter",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2-thumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:44.8366667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35818,
+        "sku": null,
+        "productID": 23215,
+        "name": "PMC - Cumulus Event Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard2-output-thumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:40.0566667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35834,
+        "sku": null,
+        "productID": 23216,
+        "name": "PMC - Medtronic Prospecting Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer2medt.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.2433333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.2433333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.2433333",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.2433333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35830,
+        "sku": null,
+        "productID": 23217,
+        "name": "PMC - Medtronic Customer Retention",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter1medt.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:57.04",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35835,
+        "sku": null,
+        "productID": 23218,
+        "name": "PMC - Medtronic Prospecting Letter",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2medt.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:58.2566667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35829,
+        "sku": null,
+        "productID": 23219,
+        "name": "PMC - Medtronic Customer Retention Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer1medt.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:48.68",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:48.68",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:48.68",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:48.68",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35831,
+        "sku": null,
+        "productID": 23220,
+        "name": "PMC - Medtronic Customer Retention Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard1medt.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:58.1333333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35832,
+        "sku": null,
+        "productID": 23221,
+        "name": "PMC - Medtronic Event Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard2medt.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:57.04",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35833,
+        "sku": null,
+        "productID": 23222,
+        "name": "PMC - Medtronic Life Insurance Email ",
+        "description": "Life Insurance Email ",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/emailthumb.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 5.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:57.3066667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35797,
+        "sku": null,
+        "productID": 23223,
+        "name": "PMC - Adviser Financial Services Customer Retention",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2afs2.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:15.2266667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35796,
+        "sku": null,
+        "productID": 23225,
+        "name": "PMC - Adviser Financial Services Customer Retention Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer1afs2.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:14.6966667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:14.6966667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:14.6966667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:14.6966667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35839,
+        "sku": null,
+        "productID": 23226,
+        "name": "PMC - Waiting Periods Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/waiting periods.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.71",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.71",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.71",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:59.71",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35798,
+        "sku": null,
+        "productID": 23227,
+        "name": "PMC - Adviser Financial Services Customer Retention Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard1afs2.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:12.2566667",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35827,
+        "sku": null,
+        "productID": 23228,
+        "name": "PMC - Just Sold Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/just sold postcard-front.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:48.1633333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35791,
+        "sku": null,
+        "productID": 23229,
+        "name": "PMC - ADP Customer Retention",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter1adp.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.56,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:01.2733333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "direct_mail",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35795,
+        "sku": null,
+        "productID": 23230,
+        "name": "PMC - ADP Prospecting Letter",
+        "description": "Letter",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoletter2adp.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2018-01-30T19:05:36.437",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.57,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:05:16.6733333",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "direct_mail",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35838,
+        "sku": null,
+        "productID": 23231,
+        "name": "PMC - Protect Your Family Email",
+        "description": "Email ",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/vipemail.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "Custom",
+        "hasTemplate": false,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:49:38.853",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "Custom",
+            "description": "Custom",
+            "price": 5.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:55.7733333",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 5.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:55.7733333",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 1,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35790,
+        "sku": null,
+        "productID": 23232,
+        "name": "PMC - ADP Customer Retention Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer1adp.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 137.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:01.3066667",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 402.5,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:01.3066667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 593.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:01.3066667",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 843.75,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:01.3066667",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35794,
+        "sku": null,
+        "productID": 23233,
+        "name": "PMC - ADP Prospecting Flyer",
+        "description": "Flyer",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/genflyer2adp.jpg",
+        "images": [],
+        "quantityDefault": 25,
+        "quantityMinimum": 25,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "FDXG",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2018-01-30T19:05:36.437",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "FDXG",
+            "description": "FedEx Ground",
+            "price": 34.29,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:05:36.11",
+            "locationType": "domestic",
+            "isDefault": true
+          },
+          {
+            "deliveryMethodCode": "FDX3DA",
+            "description": "FedEx 3 Day",
+            "price": 51.85,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:05:36.11",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDX2DA",
+            "description": "FedEx 2 Day",
+            "price": 64.53,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:05:36.11",
+            "locationType": "domestic",
+            "isDefault": false
+          },
+          {
+            "deliveryMethodCode": "FDXNDA",
+            "description": "FedEx Overnight PM",
+            "price": 81.1,
+            "country": null,
+            "countryCode": null,
+            "created": "2018-01-30T12:05:36.11",
+            "locationType": "domestic",
+            "isDefault": false
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 4,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "print_collateral",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35793,
+        "sku": null,
+        "productID": 23234,
+        "name": "PMC - ADP Event Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard2adp1.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:48:04.96",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "direct_mail",
+        "productRestrictionType": null
+      },
+      {
+        "id": 35792,
+        "sku": null,
+        "productID": 23235,
+        "name": "PMC - ADP Customer Retention Postcard",
+        "description": "Postcard",
+        "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/postcard1adp1.jpg",
+        "images": [],
+        "quantityDefault": 1,
+        "quantityMinimum": 1,
+        "quantityMaximum": null,
+        "quantityIncrement": null,
+        "shippingMethodDefault": "1C",
+        "hasTemplate": true,
+        "emailTemplateId": null,
+        "lastUpdated": "2017-11-29T00:48:38.133",
+        "customValues": [],
+        "deliveredPrices": [
+          {
+            "deliveryMethodCode": "1C",
+            "description": "1st Class",
+            "price": 1.3399999999999999,
+            "country": null,
+            "countryCode": null,
+            "created": "2017-11-28T17:47:59.54",
+            "locationType": "domestic",
+            "isDefault": true
+          }
+        ],
+        "productionSpeeds": [
+          {
+            "days": 2,
+            "isDefault": true
+          }
+        ],
+        "productFormat": "direct_mail",
+        "productRestrictionType": null
+      }
+    ]
+  }
+}

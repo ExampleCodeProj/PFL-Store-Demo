@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using PflStoreProject.Models;
 
 namespace PflStoreProject.Models
 {
@@ -24,10 +25,11 @@ namespace PflStoreProject.Models
             {
                 client.DefaultRequestHeaders.Authorization =
                     new AuthenticationHeaderValue("Basic", EncodedCredentials);
-                var response = await client.GetAsync("https://testapi.pfl.com/products?apikey=136085");
+                HttpResponseMessage response = await client.GetAsync("https://testapi.pfl.com/products?apikey=136085");
                 response.EnsureSuccessStatusCode();
-                var stringResult = await response.Content.ReadAsStringAsync();
-
+                string stringResult = await response.Content.ReadAsStringAsync();
+                
+                // convert string to a JObject allowing linq methods to extract data
                 JObject productJson = JObject.Parse(stringResult);
                 IList<JToken> results = productJson["results"]["data"].Children().ToList();
                 List<ProductViewModel> productList = new List<ProductViewModel>();
@@ -41,7 +43,7 @@ namespace PflStoreProject.Models
             }
         }
 
-        public async Task<Data> GetProductById(string id)
+        public async Task<ProductsDetail> GetProductById(string id)
         {
 
             using (HttpClient client = new HttpClient())
@@ -53,105 +55,59 @@ namespace PflStoreProject.Models
                 var stringResult = await response.Content.ReadAsStringAsync();
                 var product = JsonConvert.DeserializeObject<ProductsDetail>(stringResult);
 
-                return product.Results.Data;
+                return product;
 
             }
 
         }
-        
-//        public async Task<String> SubmitOrder(Order order)
-//        {
-//
-//            using (HttpClient client = new HttpClient())
-//            {
-//                client.DefaultRequestHeaders.Authorization =
-//                    new AuthenticationHeaderValue("Basic", EncodedCredentials);
-//                var jsonString = JsonConvert.SerializeObject(order);
-//                var orderString = new StringContent(jsonString, Encoding.UTF8, "application/json");
-//
-//                var response = await client.PostAsync($"https://testapi.pfl.com/orders?apikey=136085", orderString);
-//                response.EnsureSuccessStatusCode();
-//                var stringResult = await response.Content.ReadAsStringAsync();
-//
-//                return stringResult;
-//
-//            }
 
-            public async Task<JObject> SubmitOrder(Order order)
+        public async Task<JObject> SubmitOrder(Order order)
+        {
+
+            using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Basic", EncodedCredentials);
+                var jsonString = JsonConvert.SerializeObject(order);
+                var orderString = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-                using (HttpClient client = new HttpClient())
-                {
-                    var json = @"{
-    ""partnerOrderReference"": ""342423545"",
-    ""orderCustomer"": {  
-        ""firstName"": ""John"",  
-        ""lastName"": ""Doe"",  
-        ""companyName"": ""ACME"",  
-        ""address1"": ""1 Acme Way"",  
-        ""address2"": """",  
-        ""city"": ""Livingston"",  
-        ""state"": ""MT"",  
-        ""postalCode"": ""59047"",  
-        ""countryCode"": ""US"",  
-        ""email"": ""jdoe@acme.com"",  
-        ""phone"": ""1234567890""  
-    },  
-    ""items"": [  
-        {  
-            ""itemSequenceNumber"": 1,  
-            ""productID"": 1234,  
-            ""quantity"": 1000,  
-            ""productionDays"": 4,                    
-            ""partnerItemReference"": ""55555"",
-            ""itemFile"": ""http://www.yourdomain.com/files/printReadyArtwork1.pdf""  
-        }  
-    ],  
-    ""shipments"": [  
-        {  
-            ""shipmentSequenceNumber"": 1,  
-            ""firstName"": ""John"",  
-            ""lastName"": ""Doe"",  
-            ""companyName"": ""ACME"",  
-            ""address1"": ""1 Acme Way"",  
-            ""address2"": """",  
-            ""city"": ""Livingston"",  
-            ""state"": ""MT"",  
-            ""postalCode"": ""59047"",  
-            ""countryCode"": ""US"",  
-            ""phone"": ""1234567890"",  
-            ""shippingMethod"": ""FDXG"",
-            ""IMBSerialNumber"":""004543450""
-        }  
-    ],
-     ""billingVariables"":[
-        {
-            ""key"":   ""BillingVariable1Name"",
-            ""value"": ""BillingVariable1Value""
-        },
-        {
-            ""key"":   ""BillingVariable2Name"",
-            ""value"": ""BillingVariable2Value""
-        }
-    ]
-
-
-}
-            ";
-                    client.DefaultRequestHeaders.Authorization =
-                        new AuthenticationHeaderValue("Basic", EncodedCredentials);
-                    var jsonString = JsonConvert.SerializeObject(order);
-                    var orderString = new StringContent(json, Encoding.UTF8, "application/json");
-
-                    var response = await client.PostAsync($"https://testapi.pfl.com/orders?apikey=136085", orderString);
-                   
-                    var stringResult = await response.Content.ReadAsStringAsync();
-                    var dj = JsonConvert.DeserializeObject<JObject>(stringResult);
-                    return dj;
-
-                }
-
+                var response = await client.PostAsync($"https://testapi.pfl.com/orders?apikey=136085", orderString);
                 
+                    var stringResult = await response.Content.ReadAsStringAsync();
+                    JObject productJson = JObject.Parse(stringResult);
+                    return productJson;
+         
+
             }
+
+        }
     }
 }
+
+
+
+//
+//
+//            public async Task<JObject> SubmitOrder(Order order)
+//            {
+//
+//                using (HttpClient client = new HttpClient())
+//                {
+
+//                    client.DefaultRequestHeaders.Authorization =
+//                        new AuthenticationHeaderValue("Basic", EncodedCredentials);
+//                    var jsonString = JsonConvert.SerializeObject(order);
+//                    var orderString = new StringContent(json, Encoding.UTF8, "application/json");
+//
+//                    var response = await client.PostAsync($"https://testapi.pfl.com/orders?apikey=136085", orderString);
+//                   
+//                    var stringResult = await response.Content.ReadAsStringAsync();
+//                    var dj = JsonConvert.DeserializeObject<JObject>(stringResult);
+//                    return dj;
+//
+//                }
+//
+//                
+//            }
+//    }
+//}

@@ -8,12 +8,9 @@
 
 
 
-
-
 <div class="row">
     <div class="col-sm-12 col-md-3 col-lg-3">
         <h4>Product List</h4>
-
         @await Component.InvokeAsync("ProductNav")
     </div>
     <div class="col-sm-12 col-md-9">
@@ -30,20 +27,15 @@
             }
         }
         @if (Model.HasTemplate)
-{ <h4>Fill in the following fields to customize your order</h4>
-            foreach (var field in Model.TemplateFields.Fieldlist.Field)
-             {
-                 <div class="form-group">
-                 <label class="" for="@field.Htmlfieldname">@field.Fieldname</label>
-                 <input class="form-control"  id="@field.Htmlfieldname" name="@field.Htmlfieldname"type="text"/>
-                                                                         </div>
-             }
+            { 
+            <h4>Fill in the following fields to customize your order</h4>
+
         }
         
         
         <p>Quantity: @Model.QuantityMinimum</p>
 
-         <form asp-action="CustomerDataForm" asp-controller="Order" method="post" >
+         <form asp-action="CreateOrderItem" asp-controller="Order" method="post" >
          
       
                 <input type="hidden" asp-for="Id" value="@Model.Id" />
@@ -52,6 +44,7 @@
 
                 <input asp-for="ImageURL" type="hidden" value="@Model.Name" />
                 <input asp-for="QuantityMinimum" type="hidden" value="@Model.QuantityMinimum" class="form-control" />
+                <input asp-for="ProductionSpeeds[0].Days" type="hidden" value="@Model.ProductionSpeeds[0].Days" class="form-control" />
                 <input type="submit" value="Order" class="btn btn-default" />
       
         </form>

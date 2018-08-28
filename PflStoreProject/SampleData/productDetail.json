@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "time": "Monday, August 27, 2018 8:00:28 PM",
+    "statusCode": 200,
+    "duration": 574
+  },
+  "results": {
+    "errors": [],
+    "messages": [],
+    "data": {
+      "id": 9885,
+      "sku": null,
+      "name": "Business Cards ",
+      "description": "",
+      "imageURL": "//testapi-public.pfl.com/tosthumbnails/lobapi/6x11 postcards api.jpg",
+      "images": [],
+      "files": [],
+      "quantityDefault": 5000,
+      "quantityMinimum": 1000,
+      "quantityMaximum": 200000,
+      "quantityIncrement": 5000,
+      "shippingMethodDefault": "FDXG",
+      "emailTemplateId": null,
+      "hasTemplate": false,
+      "templateFields": null,
+      "lastUpdated": "2017-11-29T00:49:38.853",
+      "customValues": [],
+      "deliveredPrices": [
+        {
+          "deliveryMethodCode": "FDXG",
+          "description": "FedEx Ground",
+          "price": 922.65,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:49:16.4",
+          "locationType": "domestic",
+          "isDefault": true
+        },
+        {
+          "deliveryMethodCode": "FDX3DA",
+          "description": "FedEx 3 Day",
+          "price": 1240.65,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:49:16.4",
+          "locationType": "domestic",
+          "isDefault": false
+        },
+        {
+          "deliveryMethodCode": "FDX2DA",
+          "description": "FedEx 2 Day",
+          "price": 1470.15,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:49:16.4",
+          "locationType": "domestic",
+          "isDefault": false
+        },
+        {
+          "deliveryMethodCode": "FDXNDA",
+          "description": "FedEx Overnight PM",
+          "price": 1770.15,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:49:16.4",
+          "locationType": "domestic",
+          "isDefault": false
+        },
+        {
+          "deliveryMethodCode": "EDDM",
+          "description": "EDDM",
+          "price": 2077.65,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:49:16.4",
+          "locationType": "domestic",
+          "isDefault": false
+        }
+      ],
+      "productionSpeeds": [
+        {
+          "days": 2,
+          "isDefault": true
+        }
+      ],
+      "productFormat": "print_collateral",
+      "productRestrictionType": null
+    }
+  }
+}

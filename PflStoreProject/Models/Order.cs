@@ -15,35 +15,35 @@ namespace PflStoreProject.Models
         public string city { get; set; }
         public string state { get; set; }
         public string postalCode { get; set; }
-        public string countryCode { get; set; }
+        public string countryCode { get; set; } = "US";
         public string email { get; set; }
         public string phone { get; set; }
     }
 
     public class Item
     {
-        public int itemSequenceNumber { get; set; }
-        public int productID { get; set; }
-        public int quantity { get; set; }
-        public int productionDays { get; set; }
-        public string partnerItemReference { get; set; }
+        public int ItemSequenceNumber { get; set; } = 1;
+        public int ProductID { get; set; }
+        public int Quantity { get; set; } = 1;
+        public int ProductionDays { get; set; }
+        public string PartnerItemReference { get; set; } = "Reference ID";
 
     }
 
     public class Shipment
     {
-        public int shipmentSequenceNumber { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string companyName { get; set; }
-        public string address1 { get; set; }
-        public string address2 { get; set; }
-        public string city { get; set; }
-        public string state { get; set; }
-        public string postalCode { get; set; }
-        public string countryCode { get; set; }
-        public string phone { get; set; }
-        public string shippingMethod { get; set; }
+        public int ShipmentSequenceNumber { get; set; } = 1;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string CompanyName { get; set; }
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string PostalCode { get; set; }
+        public string CountryCode { get; set; } = "US";
+        public string Phone { get; set; }
+        public string shippingMethod { get; set; } = "FDXG";
         public string IMBSerialNumber { get; set; }
     }
 
