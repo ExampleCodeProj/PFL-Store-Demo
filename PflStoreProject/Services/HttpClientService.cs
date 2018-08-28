@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PflStoreProject.Models;
+using PflStoreProject.Models.ViewModels;
 
 namespace PflStoreProject.Models
 {
@@ -23,23 +24,33 @@ namespace PflStoreProject.Models
         {
             using (HttpClient client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Authorization =
-                    new AuthenticationHeaderValue("Basic", EncodedCredentials);
-                HttpResponseMessage response = await client.GetAsync("https://testapi.pfl.com/products?apikey=136085");
-                response.EnsureSuccessStatusCode();
-                string stringResult = await response.Content.ReadAsStringAsync();
-                
-                // convert string to a JObject allowing linq methods to extract data
-                JObject productJson = JObject.Parse(stringResult);
-                IList<JToken> results = productJson["results"]["data"].Children().ToList();
-                List<ProductViewModel> productList = new List<ProductViewModel>();
-                foreach (JToken token in results)
-                {
-                    ProductViewModel product = token.ToObject<ProductViewModel>();
-                    productList.Add(product);
-                }
 
-                return productList;
+                    client.DefaultRequestHeaders.Authorization =
+                        new AuthenticationHeaderValue("Basic", EncodedCredentials);
+                    HttpResponseMessage response =
+                        await client.GetAsync("https://testapi.pfl.com/products?apikey=136085");
+                    string stringResult = await response.Content.ReadAsStringAsync();
+                    JObject queryable = JObject.Parse(stringResult);
+
+
+
+
+                    // convert string to a JObject allowing linq methods to extract data
+
+                    IList<JToken> results = queryable["results"]["data"].Children().ToList();
+                    List<ProductViewModel> productList = new List<ProductViewModel>();
+                    foreach (JToken token in results)
+                    {
+                        ProductViewModel product = token.ToObject<ProductViewModel>();
+                        productList.Add(product);
+                    }
+
+                    return productList;
+                
+
+
+
+
             }
         }
 
@@ -51,7 +62,7 @@ namespace PflStoreProject.Models
                 client.DefaultRequestHeaders.Authorization =
                     new AuthenticationHeaderValue("Basic", EncodedCredentials);
                 var response = await client.GetAsync($"https://testapi.pfl.com/products?id={id}&apikey=136085");
-                response.EnsureSuccessStatusCode();
+                
                 var stringResult = await response.Content.ReadAsStringAsync();
                 var product = JsonConvert.DeserializeObject<ProductsDetail>(stringResult);
 
@@ -75,6 +86,7 @@ namespace PflStoreProject.Models
                 
                     var stringResult = await response.Content.ReadAsStringAsync();
                     JObject productJson = JObject.Parse(stringResult);
+                    //sending entire response to controller for error handleing
                     return productJson;
          
 

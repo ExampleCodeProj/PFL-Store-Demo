@@ -1,0 +1,17 @@
+﻿@using System.Security.Cryptography
+@using PflStoreProject.Models.ViewModels
+@model IEnumerable<Error>
+<h4 id="error-heading">...Oops something went wrong!</h4>
+
+@foreach (Error err in Model)
+{
+    <p>Error Field: @err.DataElement</p>
+    foreach (var msg in err.DataElementErrors)
+    {
+        <p>Message: @msg</p>
+    }
+
+    <a asp-action="Index" asp-controller="Product">Go Back to Storefront</a>
+
+
+}

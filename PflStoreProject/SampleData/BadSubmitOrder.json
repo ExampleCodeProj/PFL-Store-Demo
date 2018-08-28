@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "time": "Monday, August 27, 2018 5:18:05 AM",
+    "statusCode": 400,
+    "duration": 45
+  },
+  "results": {
+    "errors": [
+      {
+        "dataElement": "apiKey",
+        "dataElementErrors": []
+      },
+      {
+        "dataElement": "data.Payments[0].PaymentMethod",
+        "dataElementErrors": [ "\"methodname\" is not a valid PaymentMethod." ]
+      },
+      {
+        "dataElement": "GeneralError",
+        "dataElementErrors": [ "A data access error occurred and has been logged. Please contact your administrator with Error ID: 85717af5-b79f-4313-8791-a71a5ed5ce0d." ]
+      },
+      {
+        "dataElement": "GeneralError",
+        "dataElementErrors": [ "Object reference not set to an instance of an object." ]
+      }
+    ],
+    "messages": [],
+    "data": {
+      "orderNumber": null,
+      "partnerOrderReference": "MyReferenceNumber",
+      "orderCustomer": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "companyName": "ACME",
+        "address1": "1 Acme Way",
+        "address2": "",
+        "city": "Livingston",
+        "state": "MT",
+        "postalCode": "59047",
+        "countryCode": "US",
+        "email": "jdoe@acme.com",
+        "phone": "1234567890"
+      },
+      "items": [
+        {
+          "itemSequenceNumber": 1,
+          "productID": 1234,
+          "productName": null,
+          "quantity": 1000,
+          "itemFile": "http://www.yourdomain.com/files/printReadyArtwork1.pdf",
+          "templateData": null,
+          "itemID": 0,
+          "partnerItemReference": "MyItemReferenceID",
+          "itemPrice": null,
+          "productionDays": 4,
+          "templateDataURL": null
+        }
+      ],
+      "shipments": [
+        {
+          "shipmentSequenceNumber": 1,
+          "firstName": "John",
+          "lastName": "Doe",
+          "companyName": "ACME",
+          "address1": "1 Acme Way",
+          "address2": "",
+          "city": "Livingston",
+          "state": "MT",
+          "postalCode": "59047",
+          "countryCode": "US",
+          "phone": "1234567890",
+          "shippingMethod": "FDXG",
+          "returnAddress": null,
+          "description": null,
+          "imbSerialNumber": "004543450"
+        }
+      ],
+      "mailings": null,
+      "payments": [
+        {
+          "paymentMethod": "methodname",
+          "paymentID": "methodid"
+        }
+      ],
+      "itemShipments": [
+        {
+          "itemSequenceNumber": 1,
+          "shipmentSequenceNumber": 1,
+          "quantity": null,
+          "itemFile": null,
+          "reference": null
+        }
+      ],
+      "webhooks": [
+        {
+          "id": null,
+          "type": "status",
+          "callbackUri": "https://www.pfl.com/callback",
+          "callbackHeaders": {
+            "header_field_sample1": "header_value_sample1",
+            "header_field_sample2": "header_value_sample2"
+          }
+        }
+      ],
+      "orderPrices": null,
+      "billingVariables": [
+        {
+          "key": "BillingVariable1Name",
+          "value": "BillingVariable1Value"
+        },
+        {
+          "key": "BillingVariable2Name",
+          "value": "BillingVariable2Value"
+        }
+      ]
+    }
+  }
+}
