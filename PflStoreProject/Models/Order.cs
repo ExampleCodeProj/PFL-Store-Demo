@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PflStoreProject.Models.ViewModels;
 
 namespace PflStoreProject.Models
 {
@@ -20,15 +21,7 @@ namespace PflStoreProject.Models
         public string phone { get; set; }
     }
 
-    public class Item
-    {
-        public int ItemSequenceNumber { get; set; } = 1;
-        public int ProductID { get; set; }
-        public int Quantity { get; set; } = 1;
-        public int ProductionDays { get; set; }
-        public string PartnerItemReference { get; set; } = "Reference ID";
 
-    }
 
     public class Shipment
     {

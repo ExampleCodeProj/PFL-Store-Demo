@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -20,13 +21,25 @@ namespace PflStoreProject.Controllers
 
 
         public IActionResult Index()
-
         {
+            try
+            {
+                List<ProductViewModel> products = _client.GetProducts().Result;
+                return View(products);
+            }
+            catch (HttpRequestException e)
+            {
+                IDictionary msg = e.Data;
+                return View("BadRequest", msg);
+            }
+            catch (AggregateException e)
+            {
+                IDictionary msg = e.Data;
+                return View("BadRequest", msg);
+            }
 
-            List<ProductViewModel> products = _client.GetProducts().Result;
-            
-            return View(products);
         }
+
 
 
         public IActionResult Show(string id)
@@ -34,7 +47,7 @@ namespace PflStoreProject.Controllers
            
             
             Task<ProductsDetail> rawResults = _client.GetProductById(id);
-
+            //TODO: clean; this is the only object that include root object
             if (rawResults.Result.Meta.StatusCode != 200)
             {
                 var errors = rawResults.Result.Results.Errors;

@@ -29,14 +29,10 @@ namespace PflStoreProject.Models
                         new AuthenticationHeaderValue("Basic", EncodedCredentials);
                     HttpResponseMessage response =
                         await client.GetAsync("https://testapi.pfl.com/products?apikey=136085");
+                    response.EnsureSuccessStatusCode();
                     string stringResult = await response.Content.ReadAsStringAsync();
+                    // convert to JObject to make queryable by linq
                     JObject queryable = JObject.Parse(stringResult);
-
-
-
-
-                    // convert string to a JObject allowing linq methods to extract data
-
                     IList<JToken> results = queryable["results"]["data"].Children().ToList();
                     List<ProductViewModel> productList = new List<ProductViewModel>();
                     foreach (JToken token in results)
@@ -46,7 +42,7 @@ namespace PflStoreProject.Models
                     }
 
                     return productList;
-                
+
 
 
 
@@ -86,7 +82,6 @@ namespace PflStoreProject.Models
                 
                     var stringResult = await response.Content.ReadAsStringAsync();
                     JObject productJson = JObject.Parse(stringResult);
-                    //sending entire response to controller for error handleing
                     return productJson;
          
 

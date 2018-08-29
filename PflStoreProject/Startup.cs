@@ -43,7 +43,7 @@ namespace PflStoreProject
                 app.UseHsts();
             }
 
-           
+            app.UseStatusCodePages("text/plain", "Status code page, status code: {0}");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             

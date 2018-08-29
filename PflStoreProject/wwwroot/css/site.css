@@ -15,3 +15,41 @@ body {
      list-style: none;
  
 }
+#bad-request {
+    margin: 100px auto;
+    text-align: center;
+    
+}
+.card {
+    display: inline;
+    border: blue solid 1px;
+    border-radius: 5%;
+
+    
+}
+a.card {
+    margin: 5px;
+    width: 130px;
+    height: 160px;
+    padding-top: 5px;
+}
+.card-body {
+    padding: 0;
+    margin-left: 30px;
+   
+}
+
+.card-title {
+    font-size: 10px;
+    overflow-wrap: normal;
+    width: 120px;
+
+}
+.card-subtitle {
+    font-size: 12px
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+}

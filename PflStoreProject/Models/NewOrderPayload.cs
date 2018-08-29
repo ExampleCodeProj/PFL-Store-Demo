@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using PflStoreProject.Models.ViewModels;
 
 namespace PflStoreProject.Models
 {
@@ -22,7 +23,7 @@ namespace PflStoreProject.Models
             set;
         }
 
-        public List<OrderItemData> Items
+        public List<Item> Items
         {
             get;
             set;

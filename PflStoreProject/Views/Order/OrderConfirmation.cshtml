@@ -1,5 +1,44 @@
 ﻿@model NewOrderPayload
 
 
-Your Order Has Been Submitted
+Your Order Has Been Submitted:
 <h2>@Model.OrderNumber</h2>
+<table>
+    <tr>
+        <th>Item ID</th>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        
+    </tr>
+    <tr>
+        @foreach (var item in @Model.Items)
+        {
+            <td>@item.ProductID</td>
+            <td>@item.ProductName</td>
+
+            <td>@item.Quantity</td>
+            <td>@item.ItemPrice.TotalPrintingPrice</td>
+
+     } 
+    </tr>
+</table>
+
+
+<p>@Model.OrderCustomer.FirstName @Model.OrderCustomer.LastName</p>
+<p>@Model.OrderCustomer.Email</p>
+<p>@Model.OrderCustomer.Phone</p>
+
+
+<h4>Your oder production time is @Model.</h4>
+<h3>Shipping To:</h3>
+@foreach (var shipment in @Model.Shipments)
+{
+    <p>@shipment.FirstName @shipment.LastName</p>
+    <p>@shipment.CompanyName</p>
+    <p>@shipment.Address1</p>
+    <p>@shipment.Address2</p>
+    <p>@shipment.City, @shipment.State @shipment.PostalCode</p>
+    <p>@shipment.CountryCode</p>
+
+}

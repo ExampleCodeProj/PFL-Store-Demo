@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +10,11 @@ using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using Newtonsoft.Json.Linq;
 using PflStoreProject.Infrastructure;
 using PflStoreProject.Models;
+using PflStoreProject.Models.ViewModels;
+using Data = PflStoreProject.Models.Data;
+
+using OrderCustomer = PflStoreProject.Models.OrderCustomer;
+using Shipment = PflStoreProject.Models.Shipment;
 
 namespace PflStoreProject.Controllers
 {
@@ -60,7 +67,7 @@ namespace PflStoreProject.Controllers
             return RedirectToAction("SubmitOrder");
         }
 
-//        public IActionResult SubmitOrder()
+
         public async Task<IActionResult> SubmitOrder()
         {
             //            TODO: handle errors
@@ -79,14 +86,35 @@ namespace PflStoreProject.Controllers
                 items = itemList,
                 shipments = shipmentsList,
             };
-            JObject response = await _client.SubmitOrder(order);
-            NewOrderPayload results = response["results"]["data"].ToObject<NewOrderPayload>();
+            try
+            {
+                JObject response = await _client.SubmitOrder(order);
+                if (response["results"]["errors"].Count() > 1)
+                {
+                    IList<JToken> errors = response["results"]["errors"].Children().ToList();
+                    List<Error> errorsList = new List<Error>();
+                    foreach (JToken err in errors)
+                    {
+                        Error error = err.ToObject<Error>();
+                        errorsList.Add(error);
+                    }
 
-            return View("OrderConfirmation", results);
-           
+                    return View("Errors", errorsList);
+                }
+
+                NewOrderPayload results = response["results"]["data"].ToObject<NewOrderPayload>();
+                return View("OrderConfirmation", results);
+            }
+            catch (HttpRequestException e)
+            {
+                IDictionary msg = e.Data;
+                return View("BadRequest", msg);
+            }
+            catch (AggregateException e)
+            {
+                IDictionary msg = e.Data;
+                return View("BadRequest", msg);
+            }
         }
-
-
-
     }
 }
