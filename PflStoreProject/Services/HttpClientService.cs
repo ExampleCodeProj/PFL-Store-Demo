@@ -30,11 +30,14 @@ namespace PflStoreProject.Models
                     HttpResponseMessage response =
                         await client.GetAsync("https://testapi.pfl.com/products?apikey=136085");
                     response.EnsureSuccessStatusCode();
+                    // read response body into buffer as a string
                     string stringResult = await response.Content.ReadAsStringAsync();
-                    // convert to JObject to make queryable by linq
+                    // parse/interpret string into JObject to make queryable by linq and extract desired parts
                     JObject queryable = JObject.Parse(stringResult);
+                    // extract only the data section to convert to model
                     IList<JToken> results = queryable["results"]["data"].Children().ToList();
                     List<ProductViewModel> productList = new List<ProductViewModel>();
+                    // loop throgh the JObject, map to model and add to the model collection
                     foreach (JToken token in results)
                     {
                         ProductViewModel product = token.ToObject<ProductViewModel>();
@@ -50,7 +53,7 @@ namespace PflStoreProject.Models
             }
         }
 
-        public async Task<ProductsDetail> GetProductById(string id)
+        public async Task<string> GetProductById(string id)
         {
 
             using (HttpClient client = new HttpClient())
@@ -58,11 +61,14 @@ namespace PflStoreProject.Models
                 client.DefaultRequestHeaders.Authorization =
                     new AuthenticationHeaderValue("Basic", EncodedCredentials);
                 var response = await client.GetAsync($"https://testapi.pfl.com/products?id={id}&apikey=136085");
-                
                 var stringResult = await response.Content.ReadAsStringAsync();
-                var product = JsonConvert.DeserializeObject<ProductsDetail>(stringResult);
+                return stringResult;
 
-                return product;
+//                var product = JsonConvert.DeserializeObject<ProductsDetail>(stringResult);
+//
+//                return product;
+
+
 
             }
 

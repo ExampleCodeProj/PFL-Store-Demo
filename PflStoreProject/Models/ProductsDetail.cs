@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
+//ENTIRE PAYLOAD RECEIVED FROM API
+
 namespace PflStoreProject.Models
 {
     public class ProductsDetail

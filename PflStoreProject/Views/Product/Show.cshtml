@@ -4,7 +4,7 @@
 }
 
 
-@model Data
+@model ProductDetailViewModel
 
 
 
@@ -14,37 +14,35 @@
         @await Component.InvokeAsync("ProductNav")
     </div>
     <div class="col-sm-12 col-md-9">
-        <h4>@Model.Name</h4>
-        <img src="@Model.ImageURL" alt="Alternate Text" />
-        <h6>@Model.Description</h6>
-        @foreach (var location in Model.DeliveredPrices)
+        <h4>@Model.Detail.Name</h4>
+        <img src="@Model.Detail.ImageURL" alt="Alternate Text" />
+        <h6>@Model.Detail.Description</h6>
+        @foreach (var location in Model.Detail.DeliveredPrices)
         {
-            if (Model.ShippingMethodDefault == location.DeliveryMethodCode)
+            if (Model.Detail.ShippingMethodDefault == location.DeliveryMethodCode)
             {
                 <p id="price">Price: @location.Price</p>
                 <p>Domestic US delivery by @location.Description is included in price</p>
                 
             }
         }
-        @if (Model.HasTemplate)
+        @if (Model.Detail.HasTemplate)
             { 
             <h4>Fill in the following fields to customize your order</h4>
 
         }
         
         
-        <p>Quantity: @Model.QuantityMinimum</p>
+        <p>Quantity: @Model.Detail.QuantityMinimum</p>
 
          <form asp-action="CreateOrderItem" asp-controller="Order" method="post" >
          
       
-                <input type="hidden" asp-for="Id" value="@Model.Id" />
-                <input asp-for="Name" type="hidden" value="@Model.Name" />
-                <input asp-for="Description" type="hidden" value="@Model.Name" />
-
-                <input asp-for="ImageURL" type="hidden" value="@Model.Name" />
-                <input asp-for="QuantityMinimum" type="hidden" value="@Model.QuantityMinimum" class="form-control" />
-                <input asp-for="ProductionSpeeds[0].Days" type="hidden" value="@Model.ProductionSpeeds[0].Days" class="form-control" />
+                <input type="hidden" asp-for="Item.ItemID" value="@Model.Detail.Id" />
+                <input asp-for="Item.ProductName" type="hidden" value="@Model.Detail.Name" />
+                               
+                <input asp-for="Item.Quantity" type="number"  class="form-control" />
+                <input asp-for="Item.ProductionDays" type="hidden" value="@Model.Detail.ProductionSpeeds[0].Days" class="form-control" />
                 <input type="submit" value="Order" class="btn btn-default" />
       
         </form>

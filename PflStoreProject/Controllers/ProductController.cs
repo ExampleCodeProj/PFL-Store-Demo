@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using PflStoreProject.Models;
+using PflStoreProject.Models.BindingModels;
 using PflStoreProject.Models.ViewModels;
 
 namespace PflStoreProject.Controllers
@@ -41,34 +42,17 @@ namespace PflStoreProject.Controllers
         }
 
 
-
         public IActionResult Show(string id)
         {
-           
-            
-            Task<ProductsDetail> rawResults = _client.GetProductById(id);
-            //TODO: clean; this is the only object that include root object
-            if (rawResults.Result.Meta.StatusCode != 200)
+            string rawResults = _client.GetProductById(id).Result;
+            JObject queryable = JObject.Parse(rawResults);
+            ProductDetail detail = queryable["results"]["data"].ToObject<ProductDetail>();
+            ProductDetailViewModel detailModel = new ProductDetailViewModel()
             {
-                var errors = rawResults.Result.Results.Errors;
-                List<Error> errorList = new List<Error>();
-                foreach (JToken item in errors)
-                {
-                    Error error = item.ToObject<Error>();
-                    errorList.Add(error);
-                }
-                return View("Errors", errorList);
-            }
-            var productDetail = rawResults.Result.Results.Data;
-            return View(productDetail);
-
-            
-
+                Detail = detail
+            };
+            return View(detailModel);
 
         }
-
-
-
-
     }
 }

@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿// Item to bind to form
+
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -7,27 +9,16 @@ namespace PflStoreProject.Models.ViewModels
 {
 	public class Item
 	{
-	    [JsonProperty("itemSequenceNumber")] public int ItemSequenceNumber { get; set; } = 1;
-		[JsonProperty("productID")]
 		public int ProductID { get; set; }
-		[JsonProperty("productName")]
 		public string ProductName { get; set; }
-		[JsonProperty("quantity")]
 		public int Quantity { get; set; }
-		[JsonProperty("itemFile")]
 		public string ItemFile { get; set; }
-		[JsonProperty("templateData")]
-		public object TemplateData { get; set; }
-		[JsonProperty("itemID")]
+		// public object TemplateData { get; set; }
 		public long ItemID { get; set; }
-		[JsonProperty("partnerItemReference")]
 		public string PartnerItemReference { get; set; }
-		[JsonProperty("itemPrice")]
-		public ItemPrice ItemPrice { get; set; }
-		[JsonProperty("productionDays")]
+		// public ItemPrice ItemPrice { get; set; }
 		public int ProductionDays { get; set; }
-		[JsonProperty("templateDataURL")]
-		public string TemplateDataURL { get; set; }
+		// public string TemplateDataURL { get; set; }
 	}
 	
 }
