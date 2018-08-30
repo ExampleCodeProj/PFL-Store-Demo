@@ -17,10 +17,10 @@ namespace PflStoreProject.Models.BindingModels
         public string ImageURL { get; set; }
         // public List<object> Images { get; set; }
         // public List<object> Files { get; set; }
-        public int? QuantityDefault { get; set; }
+        public int QuantityDefault { get; set; } = 1;
         public int? QuantityMinimum { get; set; } = 1;
         public int? QuantityMaximum { get; set; }
-        public int? QuantityIncrement { get; set; }
+        public int? QuantityIncrement { get; set; } = 1;
         public string ShippingMethodDefault { get; set; }
         // public object EmailTemplateId { get; set; }
         public bool HasTemplate { get; set; }

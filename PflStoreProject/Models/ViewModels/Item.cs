@@ -9,12 +9,13 @@ namespace PflStoreProject.Models.ViewModels
 {
 	public class Item
 	{
+	    public int ItemSequenceNumber { get; set; }
 		public int ProductID { get; set; }
 		public string ProductName { get; set; }
 		public int Quantity { get; set; }
 		public string ItemFile { get; set; }
 		// public object TemplateData { get; set; }
-		public long ItemID { get; set; }
+//		public long ItemID { get; set; }
 		public string PartnerItemReference { get; set; }
 		// public ItemPrice ItemPrice { get; set; }
 		public int ProductionDays { get; set; }

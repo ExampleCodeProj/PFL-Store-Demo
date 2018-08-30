@@ -87,9 +87,9 @@ namespace PflStoreProject.Models
         [JsonProperty("price")]
         public double Price { get; set; }
         [JsonProperty("country")]
-        public object Country { get; set; }
+        public string Country { get; set; }
         [JsonProperty("countryCode")]
-        public object CountryCode { get; set; }
+        public string CountryCode { get; set; }
         [JsonProperty("created")]
         public DateTime Created { get; set; }
         [JsonProperty("locationType")]

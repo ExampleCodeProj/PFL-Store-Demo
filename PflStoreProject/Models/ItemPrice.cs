@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace PflStoreProject.Models.ViewModels
+namespace PflStoreProject.Models
 {
     public class ItemPrice
     {

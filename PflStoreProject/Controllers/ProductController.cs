@@ -25,8 +25,18 @@ namespace PflStoreProject.Controllers
         {
             try
             {
-                List<ProductViewModel> products = _client.GetProducts().Result;
-                return View(products);
+                string response = _client.GetProducts().Result;
+                JObject queryableRes = JObject.Parse(response);
+                // extract data section and convert to queryable collection
+                IList<JToken> results = queryableRes["results"]["data"].Children().ToList();
+                List<ProductViewModel> productList = new List<ProductViewModel>();
+                // loop throgh the JObject; map to model; add to collection
+                foreach (JToken token in results)
+                {
+                    ProductViewModel product = token.ToObject<ProductViewModel>();
+                    productList.Add(product);
+                }
+                return View(productList);
             }
             catch (HttpRequestException e)
             {
@@ -38,15 +48,26 @@ namespace PflStoreProject.Controllers
                 IDictionary msg = e.Data;
                 return View("BadRequest", msg);
             }
-
         }
 
 
         public IActionResult Show(string id)
         {
             string rawResults = _client.GetProductById(id).Result;
-            JObject queryable = JObject.Parse(rawResults);
-            ProductDetail detail = queryable["results"]["data"].ToObject<ProductDetail>();
+
+            JObject queryableRes = JObject.Parse(rawResults);
+            if (queryableRes["results"]["errors"].Any())
+            {
+                IList<JToken> errors = queryableRes["results"]["errors"].Children().ToList();
+                List<Error> errorsList = new List<Error>();
+                foreach (JToken err in errors)
+                {
+                    Error error = err.ToObject<Error>();
+                    errorsList.Add(error);
+                }
+                return View("Errors", errorsList);
+            }
+            ProductDetail detail = queryableRes["results"]["data"].ToObject<ProductDetail>();
             ProductDetailViewModel detailModel = new ProductDetailViewModel()
             {
                 Detail = detail

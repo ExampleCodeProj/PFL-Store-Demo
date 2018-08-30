@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -23,18 +24,17 @@ namespace PflStoreProject.Controllers
         private HttpClientService _client = new HttpClientService();
 
         [HttpPost]
-        public IActionResult CreateOrderItem(Data item)
+        public IActionResult CreateOrderItem(ProductDetailViewModel itemOrdered)
         {
-            //TODO: add quantity input control to order
-            //TODO: add validation
-            var newItem = new Item()
-            {
-                ProductID = item.Id,
-                ProductionDays  = item.ProductionSpeeds[0].Days,
-                Quantity = item.QuantityMinimum ?? 1
-            };
-            HttpContext.Session.SetJson("Items", newItem);
+//             TODO: add validation -- min/max and increment for quantity
+            
+            List<Item> items = HttpContext.Session.GetJson<List<Item>>("Items") ?? new List<Item>();
+            itemOrdered.Item.ItemSequenceNumber = items.Count() + 1;
+            items.Add(itemOrdered.Item);
+            HttpContext.Session.SetJson("Items", items);
             return RedirectToAction("CustomerData");
+            
+
         }
 
         [HttpGet]
@@ -71,10 +71,9 @@ namespace PflStoreProject.Controllers
         public async Task<IActionResult> SubmitOrder()
         {
             //            TODO: handle errors
-            var custData = HttpContext.Session.GetJson<OrderCustomer>("CustData");
-            var item = HttpContext.Session.GetJson<Item>("Items");
-            var itemList = new List<Item>();
-            itemList.Add(item);
+            OrderCustomer custData = HttpContext.Session.GetJson<OrderCustomer>("CustData");
+            List<Item> itemsList = HttpContext.Session.GetJson<List<Item>>("Items");
+     
 
             var shipment = HttpContext.Session.GetJson<Shipment>("Shipment");
             var shipmentsList = new List<Shipment>();
@@ -83,13 +82,13 @@ namespace PflStoreProject.Controllers
             Order order = new Order()
             {
                 orderCustomer = custData,
-                items = itemList,
+                items = itemsList,
                 shipments = shipmentsList,
             };
             try
             {
                 JObject response = await _client.SubmitOrder(order);
-                if (response["results"]["errors"].Count() > 1)
+                if (response["results"]["errors"].Count() > 0)
                 {
                     IList<JToken> errors = response["results"]["errors"].Children().ToList();
                     List<Error> errorsList = new List<Error>();
@@ -100,6 +99,7 @@ namespace PflStoreProject.Controllers
                     }
 
                     return View("Errors", errorsList);
+                    //TODO: product specific error needs to remove item from list or update
                 }
 
                 NewOrderPayload results = response["results"]["data"].ToObject<NewOrderPayload>();

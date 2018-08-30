@@ -4,47 +4,105 @@
 }
 
 
+@using Remotion.Linq.Clauses.ResultOperators
 @model ProductDetailViewModel
 
 
 
-<div class="row">
-    <div class="col-sm-12 col-md-3 col-lg-3">
-        <h4>Product List</h4>
-        @await Component.InvokeAsync("ProductNav")
-    </div>
-    <div class="col-sm-12 col-md-9">
-        <h4>@Model.Detail.Name</h4>
-        <img src="@Model.Detail.ImageURL" alt="Alternate Text" />
-        <h6>@Model.Detail.Description</h6>
-        @foreach (var location in Model.Detail.DeliveredPrices)
-        {
-            if (Model.Detail.ShippingMethodDefault == location.DeliveryMethodCode)
-            {
-                <p id="price">Price: @location.Price</p>
-                <p>Domestic US delivery by @location.Description is included in price</p>
-                
-            }
-        }
-        @if (Model.Detail.HasTemplate)
-            { 
-            <h4>Fill in the following fields to customize your order</h4>
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <h4>Product List</h4>
+            <h6>(TODO: Nav by Category)</h6>
+            @await Component.InvokeAsync("ProductNav")
+        </div>
+        <div class="col-sm-12 col-md-8">
+            <form asp-action="CreateOrderItem" asp-controller="Order" method="post">
+                <h4>@Model.Detail.Name</h4>
+                <img src="@Model.Detail.ImageURL" alt="Alternate Text" />
+                <h6>@Model.Detail.Description</h6>
+                @foreach (var location in Model.Detail.DeliveredPrices)
+                {
+                    if (Model.Detail.ShippingMethodDefault == location.DeliveryMethodCode)
+                    {
+                        <p id="price">Starting at: $@location.Price</p>
 
-        }
-        
-        
-        <p>Quantity: @Model.Detail.QuantityMinimum</p>
 
-         <form asp-action="CreateOrderItem" asp-controller="Order" method="post" >
-         
-      
-                <input type="hidden" asp-for="Item.ItemID" value="@Model.Detail.Id" />
+                    }
+                }
+
+
+
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-3" asp-for="Item.Quantity">Enter Quantity:</label>
+                        <input class="col-2 form-control" asp-for="Item.Quantity" type="number" min="@Model.Detail.QuantityMinimum" max="@Model.Detail.QuantityMaximum" step="@Model.Detail.QuantityIncrement" value="@Model.Detail.QuantityDefault" />
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <span class="col-3"></span>
+                    <small>*Quantity Restrictions: Min @Model.Detail.QuantityMinimum/Max @Model.Detail.QuantityMaximum in increments of @Model.Detail.QuantityIncrement </small>
+                </div>
+
+                @* OK,OK...I KNOW THIS IS A MESS --AND I PROBABLY BROKE A THOUSAND RULES, BUT IT WAS REALLY FUN TRYING TO GET IT TO WORK! *@
+                <div id="codeBlock">
+                    @{
+
+                        List<string> countries = new List<string>();
+                        List<string> liElems = new List<string>();
+
+                        <ul class="">
+                            @foreach (var location in Model.Detail.DeliveredPrices)
+                            {
+                                string country;
+                                if (location.LocationType == "domestic")
+                                {
+                                    country = "USA";
+                                }
+                                else
+                                {
+                                    country = location.Country ?? "Intl";
+                                }
+                                countries.Add(country);
+
+                                <li class="deliveryMethods" name="@country">
+                                    <input type="radio" name="deliveryMethod" value="@location.DeliveryMethodCode">@location.Description <i>(est. Total $@location.Price for @Model.Detail.QuantityDefault)</i>
+                                </li>
+                            }
+                        </ul>
+
+
+                        var distinct = countries.Distinct();
+                        <div id="shippingSelect">
+                            <label for="countrySelector">Shipping Options:</label>
+                            <select id="countrySelector" name="deliveryMethod">
+                                @foreach (var item in distinct)
+                                {
+                                    <option value="@item">@item</option>
+                                }
+                            </select>
+                        </div>
+                    }
+                </div>
+
+
+
+
+
+
+                <input type="hidden" asp-for="Item.ProductID" value="@Model.Detail.Id" />
                 <input asp-for="Item.ProductName" type="hidden" value="@Model.Detail.Name" />
-                               
-                <input asp-for="Item.Quantity" type="number"  class="form-control" />
+                <input asp-for="Detail.QuantityMinimum" type="hidden" value="@Model.Detail.QuantityMinimum" class="form-control" />
+                <input asp-for="Detail.QuantityMaximum" type="hidden" value="@Model.Detail.QuantityMaximum ?? 'N/A'" class="form-control" />
+                <input asp-for="Detail.QuantityIncrement" type="hidden" value="@Model.Detail.QuantityIncrement ?? 1" class="form-control" />
                 <input asp-for="Item.ProductionDays" type="hidden" value="@Model.Detail.ProductionSpeeds[0].Days" class="form-control" />
                 <input type="submit" value="Order" class="btn btn-default" />
-      
+        
+
+    @if (Model.Detail.HasTemplate)
+    {
+        <h4>Fill in the following fields to customize your order</h4>
+        <p>TEMPLATE FORM TO GO HERE</p>
+    }
         </form>
         </div>
 </div>
