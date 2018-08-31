@@ -13,6 +13,7 @@ using Newtonsoft.Json.Linq;
 using PflStoreProject.Infrastructure;
 using PflStoreProject.Models;
 using PflStoreProject.Models.ViewModels;
+using PflStoreProject.Services;
 using Data = PflStoreProject.Models.Data;
 
 using OrderCustomer = PflStoreProject.Models.OrderCustomer;
@@ -22,7 +23,11 @@ namespace PflStoreProject.Controllers
 {
     public class OrderController : Controller
     {
-        private HttpClientService _client = new HttpClientService();
+        private HttpClientService _client;
+        public OrderController(HttpClientService client)
+        {
+            _client = client;
+        }
 
         [HttpPost]
         public async Task<IActionResult> CreateOrderItem(ProductDetailViewModel itemOrdered, IFormFile fileUpload)

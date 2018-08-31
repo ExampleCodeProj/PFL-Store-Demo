@@ -8,6 +8,7 @@ using Newtonsoft.Json.Linq;
 using PflStoreProject.Models;
 using PflStoreProject.Models.BindingModels;
 using PflStoreProject.Models.ViewModels;
+using PflStoreProject.Services;
 using Item = PflStoreProject.Models.BindingModels.Item;
 
 namespace PflStoreProject.Controllers
@@ -15,7 +16,12 @@ namespace PflStoreProject.Controllers
     public class ProductController : Controller
     {
         // TODO: pass in through DI
-        private readonly HttpClientService _client = new HttpClientService();
+        private readonly HttpClientService _client;
+
+        public ProductController(HttpClientService client)
+        {
+            _client = client;
+        }
 
 
         public IActionResult Index()

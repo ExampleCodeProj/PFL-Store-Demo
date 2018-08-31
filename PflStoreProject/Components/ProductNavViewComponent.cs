@@ -5,13 +5,19 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using PflStoreProject.Models;
+using PflStoreProject.Services;
 
 namespace PflStoreProject.Components
 {
     public class ProductNavViewComponent : ViewComponent
     {
-        private HttpClientService _client = new HttpClientService();
- 
+        private HttpClientService _client;
+
+        public ProductNavViewComponent(HttpClientService client)
+        {
+            _client = client;
+        }
+
 
         public IViewComponentResult Invoke()
 
