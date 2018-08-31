@@ -1,0 +1,882 @@
+{
+  "meta": {
+    "time": "Thursday, August 30, 2018 7:56:56 PM",
+    "statusCode": 200,
+    "duration": 585
+  },
+  "results": {
+    "errors": [],
+    "messages": [],
+    "data": {
+      "id": 23190,
+      "sku": null,
+      "name": "PMC - BASE PROD - FLYER 8.5x11 4/4",
+      "description": "Flyer",
+      "imageURL": "//testapi-public.pfl.com/tosthumbnails/personalmcapi/demoflyerthumbbbt.jpg",
+      "images": [],
+      "files": [],
+      "quantityDefault": 25,
+      "quantityMinimum": 25,
+      "quantityMaximum": null,
+      "quantityIncrement": null,
+      "shippingMethodDefault": "FDXG",
+      "emailTemplateId": null,
+      "hasTemplate": true,
+      "templateFields": {
+        "fieldlist": {
+          "field": [
+            {
+              "required": "N",
+              "visible": "N",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "EMAIL LABEL",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Email Label"
+                },
+                {
+                  "language": "de",
+                  "text": "EMAIL LABEL"
+                },
+                {
+                  "language": "fr",
+                  "text": "EMAIL LABEL"
+                },
+                {
+                  "language": "es",
+                  "text": "EMAIL LABEL"
+                },
+                {
+                  "language": "it",
+                  "text": "EMAIL LABEL"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "EMAIL LABEL"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "EMAIL LABEL"
+                },
+                {
+                  "language": "ja",
+                  "text": "EMAIL LABEL"
+                }
+              ],
+              "default": "",
+              "orgvalue": "",
+              "htmlfieldname": "EMAIL_LABEL"
+            },
+            {
+              "required": "Y",
+              "visible": "N",
+              "type": "SEPARATOR",
+              "fieldname": "Separator",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Separator"
+                },
+                {
+                  "language": "de",
+                  "text": "Separator"
+                },
+                {
+                  "language": "fr",
+                  "text": "Separator"
+                },
+                {
+                  "language": "es",
+                  "text": "Separator"
+                },
+                {
+                  "language": "it",
+                  "text": "Separator"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "Separator"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "Separator"
+                },
+                {
+                  "language": "ja",
+                  "text": "Separator"
+                }
+              ],
+              "description": { "language": "en-us" }
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_FIRST_NAME",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "First Name"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_FIRST_NAME"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_FIRST_NAME"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_FIRST_NAME"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_FIRST_NAME"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_FIRST_NAME"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_FIRST_NAME"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_FIRST_NAME"
+                }
+              ],
+              "default": "Henry",
+              "orgvalue": "First Name",
+              "htmlfieldname": "TWC_FIRST_NAME"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_LAST_NAME",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Last Name"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_LAST_NAME"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_LAST_NAME"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_LAST_NAME"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_LAST_NAME"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_LAST_NAME"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_LAST_NAME"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_LAST_NAME"
+                }
+              ],
+              "default": "Roberts",
+              "orgvalue": "Last Name",
+              "htmlfieldname": "TWC_LAST_NAME"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_TITLE",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Title"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_TITLE"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_TITLE"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_TITLE"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_TITLE"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_TITLE"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_TITLE"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_TITLE"
+                }
+              ],
+              "default": "Account Executive",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_TITLE"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_PHONE_LABEL",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Phone Label"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_PHONE_LABEL"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_PHONE_LABEL"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_PHONE_LABEL"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_PHONE_LABEL"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_PHONE_LABEL"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_PHONE_LABEL"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_PHONE_LABEL"
+                }
+              ],
+              "default": "Phone:",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_PHONE_LABEL"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_PHONE",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Phone"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_PHONE"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_PHONE"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_PHONE"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_PHONE"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_PHONE"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_PHONE"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_PHONE"
+                }
+              ],
+              "default": "1-212-221-7942",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_PHONE"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_CELL_LABEL",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Cell Label:"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_CELL_LABEL"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_CELL_LABEL"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_CELL_LABEL"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_CELL_LABEL"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_CELL_LABEL"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_CELL_LABEL"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_CELL_LABEL"
+                }
+              ],
+              "default": "Cell:",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_CELL_LABEL"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_CELL_PHONE",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Cell Phone"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_CELL_PHONE"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_CELL_PHONE"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_CELL_PHONE"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_CELL_PHONE"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_CELL_PHONE"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_CELL_PHONE"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_CELL_PHONE"
+                }
+              ],
+              "default": "1-212-444-6666",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_CELL_PHONE"
+            },
+            {
+              "required": "N",
+              "visible": "N",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_FAX_LABEL",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Fax Label"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_FAX_LABEL"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_FAX_LABEL"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_FAX_LABEL"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_FAX_LABEL"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_FAX_LABEL"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_FAX_LABEL"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_FAX_LABEL"
+                }
+              ],
+              "default": "",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_FAX_LABEL"
+            },
+            {
+              "required": "N",
+              "visible": "N",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_FAX",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Fax"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_FAX"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_FAX"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_FAX"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_FAX"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_FAX"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_FAX"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_FAX"
+                }
+              ],
+              "default": "",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_FAX"
+            },
+            {
+              "required": "N",
+              "visible": "N",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_ADDITIONAL_INFO_LABEL",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Additional Email/Social Media Label"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_ADDITIONAL_INFO_LABEL"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_ADDITIONAL_INFO_LABEL"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_ADDITIONAL_INFO_LABEL"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_ADDITIONAL_INFO_LABEL"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_ADDITIONAL_INFO_LABEL"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_ADDITIONAL_INFO_LABEL"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_ADDITIONAL_INFO_LABEL"
+                }
+              ],
+              "default": "",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_ADDITIONAL_INFO_LABEL"
+            },
+            {
+              "required": "N",
+              "visible": "N",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_ADDITIONAL_CONTACT_INFO",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Additional Email/Social Media Info"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_ADDITIONAL_CONTACT_INFO"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_ADDITIONAL_CONTACT_INFO"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_ADDITIONAL_CONTACT_INFO"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_ADDITIONAL_CONTACT_INFO"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_ADDITIONAL_CONTACT_INFO"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_ADDITIONAL_CONTACT_INFO"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_ADDITIONAL_CONTACT_INFO"
+                }
+              ],
+              "default": "",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_ADDITIONAL_CONTACT_INFO"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_EMAIL",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Email"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_EMAIL"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_EMAIL"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_EMAIL"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_EMAIL"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_EMAIL"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_EMAIL"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_EMAIL"
+                }
+              ],
+              "default": "hroberts7@axa.us.com",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_EMAIL"
+            },
+            {
+              "required": "N",
+              "visible": "N",
+              "type": "SINGLELINE",
+              "subtype": "A",
+              "fieldname": "TWC_LEGAL",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "TWC_LEGAL"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_LEGAL"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_LEGAL"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_LEGAL"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_LEGAL"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_LEGAL"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_LEGAL"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_LEGAL"
+                }
+              ],
+              "default": "",
+              "orgvalue": "",
+              "htmlfieldname": "TWC_LEGAL"
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "GRAPHICPICKLIST",
+              "subtype": "DROPLIST",
+              "autosort": "N",
+              "fieldname": "TWC_HEADSHOT_D",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Headshot"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_HEADSHOT_D"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_HEADSHOT_D"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_HEADSHOT_D"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_HEADSHOT_D"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_HEADSHOT_D"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_HEADSHOT_D"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_HEADSHOT_D"
+                }
+              ],
+              "default": "1",
+              "orgvalue": "henry1jpg",
+              "htmlfieldname": "TWC_HEADSHOT_D",
+              "picklist": {
+                "item": [
+                  {
+                    "prompt": {
+                      "language": "en-US",
+                      "text": "//testapi-public.pfl.com/FusionProTemplates/136085/23190/henry1.jpg"
+                    },
+                    "value": "henry1jpg"
+                  },
+                  {
+                    "prompt": {
+                      "language": "en-US",
+                      "text": "//testapi-public.pfl.com/FusionProTemplates/136085/23190/henry2.jpg"
+                    },
+                    "value": "henry2jpg"
+                  },
+                  {
+                    "prompt": {
+                      "language": "en-US",
+                      "text": "//testapi-public.pfl.com/FusionProTemplates/136085/23190/henry3.jpg"
+                    },
+                    "value": "henry3jpg"
+                  },
+                  {
+                    "prompt": {
+                      "language": "en-US",
+                      "text": "//testapi-public.pfl.com/FusionProTemplates/136085/23190/noheadshot.jpg"
+                    },
+                    "value": "noheadshotjpg"
+                  }
+                ]
+              }
+            },
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "GRAPHICPICKLIST",
+              "subtype": "DROPLIST",
+              "autosort": "N",
+              "fieldname": "TWC_ADVER_D",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Offer"
+                },
+                {
+                  "language": "de",
+                  "text": "TWC_ADVER_D"
+                },
+                {
+                  "language": "fr",
+                  "text": "TWC_ADVER_D"
+                },
+                {
+                  "language": "es",
+                  "text": "TWC_ADVER_D"
+                },
+                {
+                  "language": "it",
+                  "text": "TWC_ADVER_D"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "TWC_ADVER_D"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "TWC_ADVER_D"
+                },
+                {
+                  "language": "ja",
+                  "text": "TWC_ADVER_D"
+                }
+              ],
+              "default": "1",
+              "orgvalue": "offer1jpg",
+              "htmlfieldname": "TWC_ADVER_D",
+              "picklist": {
+                "item": [
+                  {
+                    "prompt": {
+                      "language": "en-US",
+                      "text": "//testapi-public.pfl.com/FusionProTemplates/136085/23190/Offer1.jpg"
+                    },
+                    "value": "offer1jpg"
+                  },
+                  {
+                    "prompt": {
+                      "language": "en-US",
+                      "text": "//testapi-public.pfl.com/FusionProTemplates/136085/23190/Offer2.jpg"
+                    },
+                    "value": "offer2jpg"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "lastUpdated": "2017-11-29T00:48:38.133",
+      "customValues": [],
+      "deliveredPrices": [
+        {
+          "deliveryMethodCode": "FDXG",
+          "description": "FedEx Ground",
+          "price": 142.75,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:48:28.3066667",
+          "locationType": "domestic",
+          "isDefault": true
+        },
+        {
+          "deliveryMethodCode": "FDX3DA",
+          "description": "FedEx 3 Day",
+          "price": 407.75,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:48:28.3066667",
+          "locationType": "domestic",
+          "isDefault": false
+        },
+        {
+          "deliveryMethodCode": "FDX2DA",
+          "description": "FedEx 2 Day",
+          "price": 599.0,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:48:28.3066667",
+          "locationType": "domestic",
+          "isDefault": false
+        },
+        {
+          "deliveryMethodCode": "FDXNDA",
+          "description": "FedEx Overnight PM",
+          "price": 849.0,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:48:28.3066667",
+          "locationType": "domestic",
+          "isDefault": false
+        }
+      ],
+      "productionSpeeds": [
+        {
+          "days": 1,
+          "isDefault": true
+        }
+      ],
+      "productFormat": "print_collateral",
+      "productRestrictionType": null
+    }
+  }
+}

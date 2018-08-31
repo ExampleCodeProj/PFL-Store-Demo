@@ -17,6 +17,11 @@ namespace PflStoreProject.Models.ViewModels
         public ProductDetail Detail { get; set; }
 
         public Item Item { get; set; }
+
+        public string DeliveryMethod { get; set; }
+        public string DesignOption { get; set; }
+        public IEnumerable<string> Countries { get; set; }
+
     }
 
 

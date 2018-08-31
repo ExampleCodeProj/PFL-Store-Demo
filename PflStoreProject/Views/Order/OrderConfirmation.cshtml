@@ -25,20 +25,24 @@ Your Order Has Been Submitted:
 </table>
 
 
-<p>@Model.OrderCustomer.FirstName @Model.OrderCustomer.LastName</p>
-<p>@Model.OrderCustomer.Email</p>
-<p>@Model.OrderCustomer.Phone</p>
+<address>
+    <p>@Model.OrderCustomer.FirstName @Model.OrderCustomer.LastName</p>
+    <p>@Model.OrderCustomer.Email</p>
+    <p>@Model.OrderCustomer.Phone</p>
+</address>
 
 
 <h4>Your oder production time is @Model.</h4>
 <h3>Shipping To:</h3>
-@foreach (var shipment in @Model.Shipments)
-{
-    <p>@shipment.FirstName @shipment.LastName</p>
-    <p>@shipment.CompanyName</p>
-    <p>@shipment.Address1</p>
-    <p>@shipment.Address2</p>
-    <p>@shipment.City, @shipment.State @shipment.PostalCode</p>
-    <p>@shipment.CountryCode</p>
+<address>
+    @foreach (var shipment in @Model.Shipments)
+    {
+        <p>@shipment.FirstName @shipment.LastName</p>
+        <p>@shipment.CompanyName</p>
+        <p>@shipment.Address1</p>
+        <p>@shipment.Address2</p>
+        <p>@shipment.City, @shipment.State @shipment.PostalCode</p>
+        <p>@shipment.CountryCode</p>
 
-}
+    }
+</address>

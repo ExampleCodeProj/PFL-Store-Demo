@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -24,15 +25,29 @@ namespace PflStoreProject.Controllers
         private HttpClientService _client = new HttpClientService();
 
         [HttpPost]
-        public IActionResult CreateOrderItem(ProductDetailViewModel itemOrdered)
+        public async Task<IActionResult> CreateOrderItem(ProductDetailViewModel itemOrdered, IFormFile fileUpload)
         {
-//             TODO: add validation -- min/max and increment for quantity
+            if (itemOrdered.DesignOption == "designFile")
+            {
+                // TODO: Process File to Blob storage and return name; currently  Item.ItemFile is a temp name of local storage
+                string filePath = Path.GetTempFileName();
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                await fileUpload.CopyToAsync(stream);
+//                TODO: this should be set to final location
+                itemOrdered.Item.ItemFile = filePath;
+            }
+            if(itemOrdered.DesignOption == "") { }
+
+            // TODO: add validation -- min/max and increment for quantity
+            
+            //TODO: validate fileItem OR Template data depending on designMethod selected
             
             List<Item> items = HttpContext.Session.GetJson<List<Item>>("Items") ?? new List<Item>();
+            HttpContext.Session.SetString("ShippingMethod", itemOrdered.DeliveryMethod);
             itemOrdered.Item.ItemSequenceNumber = items.Count() + 1;
             items.Add(itemOrdered.Item);
             HttpContext.Session.SetJson("Items", items);
-            return RedirectToAction("CustomerData");
+            return RedirectToAction("ShipmentData");
             
 
         }
@@ -49,7 +64,7 @@ namespace PflStoreProject.Controllers
             //TODO: add validation
 //            TODO: handle errors
             HttpContext.Session.SetJson("CustData", custData);
-            return RedirectToAction("ShipmentData");
+            return RedirectToAction("SubmitOrder");
         }
 
         [HttpGet]
@@ -63,8 +78,11 @@ namespace PflStoreProject.Controllers
         {
             //            TODO: add validation
             //            TODO: handle errors
+            string shippingMetod = HttpContext.Session.GetString("ShippingMethod");
+            
+            shipData.ShippingMethod = shippingMetod;
             HttpContext.Session.SetJson("Shipment", shipData);
-            return RedirectToAction("SubmitOrder");
+            return RedirectToAction("CustomerData");
         }
 
 
@@ -76,6 +94,7 @@ namespace PflStoreProject.Controllers
      
 
             var shipment = HttpContext.Session.GetJson<Shipment>("Shipment");
+            
             var shipmentsList = new List<Shipment>();
             shipmentsList.Add(shipment);
 
@@ -88,7 +107,7 @@ namespace PflStoreProject.Controllers
             try
             {
                 JObject response = await _client.SubmitOrder(order);
-                if (response["results"]["errors"].Count() > 0)
+                if (response["results"]["errors"].Any())
                 {
                     IList<JToken> errors = response["results"]["errors"].Children().ToList();
                     List<Error> errorsList = new List<Error>();

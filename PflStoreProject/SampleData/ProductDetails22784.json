@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "time": "Thursday, August 30, 2018 7:54:54 PM",
+    "statusCode": 200,
+    "duration": 668
+  },
+  "results": {
+    "errors": [],
+    "messages": [],
+    "data": {
+      "id": 22784,
+      "sku": null,
+      "name": "POD - $100 75Mbps Double Play DH",
+      "description": "",
+      "imageURL": "//testapi-public.pfl.com/tosthumbnails/att/$100-75mbps-double-play-dh_sku017940.jpg",
+      "images": [],
+      "files": [],
+      "quantityDefault": 500,
+      "quantityMinimum": 100,
+      "quantityMaximum": null,
+      "quantityIncrement": 50,
+      "shippingMethodDefault": "FDXG",
+      "emailTemplateId": null,
+      "hasTemplate": true,
+      "templateFields": {
+        "fieldlist": {
+          "field": [
+            {
+              "required": "N",
+              "visible": "Y",
+              "type": "MULTILINE",
+              "charlimit": "200",
+              "linelimit": "3",
+              "fieldname": "Call to Action",
+              "prompt": [
+                {
+                  "language": "en-US",
+                  "text": "Call to Action"
+                },
+                {
+                  "language": "de",
+                  "text": "Call to Action"
+                },
+                {
+                  "language": "fr",
+                  "text": "Call to Action"
+                },
+                {
+                  "language": "es",
+                  "text": "Call to Action"
+                },
+                {
+                  "language": "it",
+                  "text": "Call to Action"
+                },
+                {
+                  "language": "zh-CN",
+                  "text": "Call to Action"
+                },
+                {
+                  "language": "zh-TW",
+                  "text": "Call to Action"
+                },
+                {
+                  "language": "ja",
+                  "text": "Call to Action"
+                }
+              ],
+              "default": "Call 877.910.0501 or go to att.com/connectme",
+              "orgvalue": "Call 877.910.0501 or go to att.com/connectme",
+              "htmlfieldname": "CALL_TO_ACTION"
+            }
+          ]
+        }
+      },
+      "lastUpdated": "2017-11-29T00:49:38.853",
+      "customValues": [],
+      "deliveredPrices": [
+        {
+          "deliveryMethodCode": "FDXG",
+          "description": "FedEx Ground",
+          "price": 92.82,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:49:08.1633333",
+          "locationType": "domestic",
+          "isDefault": true
+        },
+        {
+          "deliveryMethodCode": "FDXIP",
+          "description": "FedEx International Priority",
+          "price": 250.92,
+          "country": null,
+          "countryCode": null,
+          "created": "2017-11-28T17:49:08.1633333",
+          "locationType": "international",
+          "isDefault": true
+        },
+        {
+          "deliveryMethodCode": "FDXIP",
+          "description": "FedEx International Priority",
+          "price": 250.92,
+          "country": "Australia",
+          "countryCode": "AU",
+          "created": "2017-11-28T17:49:08.1633333",
+          "locationType": "international",
+          "isDefault": true
+        },
+        {
+          "deliveryMethodCode": "FDXIP",
+          "description": "FedEx International Priority",
+          "price": 159.12,
+          "country": "Canada",
+          "countryCode": "CA",
+          "created": "2017-11-28T17:49:08.1633333",
+          "locationType": "international",
+          "isDefault": true
+        },
+        {
+          "deliveryMethodCode": "FDXIP",
+          "description": "FedEx International Priority",
+          "price": 199.92,
+          "country": "Netherlands",
+          "countryCode": "NL",
+          "created": "2017-11-28T17:49:08.1633333",
+          "locationType": "international",
+          "isDefault": true
+        },
+        {
+          "deliveryMethodCode": "FDXIP",
+          "description": "FedEx International Priority",
+          "price": 220.32,
+          "country": "Norway",
+          "countryCode": "NO",
+          "created": "2017-11-28T17:49:08.1633333",
+          "locationType": "international",
+          "isDefault": true
+        }
+      ],
+      "productionSpeeds": [
+        {
+          "days": 4,
+          "isDefault": true
+        },
+        {
+          "days": 3,
+          "isDefault": false
+        },
+        {
+          "days": 2,
+          "isDefault": false
+        }
+      ],
+      "productFormat": "print_collateral",
+      "productRestrictionType": null
+    }
+  }
+}

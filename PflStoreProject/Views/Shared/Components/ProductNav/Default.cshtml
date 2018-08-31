@@ -1,11 +1,13 @@
 ﻿@model IEnumerable<ProductViewModel>
 
-            @foreach (var product in Model.OrderBy(p => p.Description))
-            {
-                <li>
-                    <a asp-action="show" asp-controller="Product" asp-route-id="@product.ProductID" class="">
-                        @product.Name
-                    </a>
-                </li>
-            }
-        </ul>
+
+    @* SHOULD REALLY BE USED TO FILTER CATEGORIES; BUT NOTHING IN DATA TO FILTER BY *@
+    @foreach (var product in Model.OrderBy(p => p.Description))
+    {
+        <li class="product-nav">
+            <a asp-action="show" asp-controller="Product" asp-route-id="@product.ProductID" >
+                @product.Name
+            </a>
+        </li>
+    }
+

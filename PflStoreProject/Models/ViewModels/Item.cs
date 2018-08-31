@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
+using Microsoft.AspNetCore.Http;
+
 namespace PflStoreProject.Models.ViewModels
 {
 	public class Item

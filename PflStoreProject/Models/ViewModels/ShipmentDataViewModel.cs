@@ -23,7 +23,6 @@ namespace PflStoreProject.Models
         [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
         [MaxLength(55, ErrorMessage = "Must not exceed 55 characters.")]
         [Display(Name = "Company Name:")]
-        [Required(ErrorMessage = "Required")]
         public string CompanyName { get; set; }
 
         [Required(ErrorMessage = "Required")]
@@ -43,16 +42,23 @@ namespace PflStoreProject.Models
         public string Address2 { get; set; }
 
         [Required(ErrorMessage = "Required")]
-        [Display(Name = "City:")]
+        [Display(Name = "City or Province:")]
         public string City { get; set; }
 
         [Required(ErrorMessage = "Required")]
         [Display(Name = "State:")]
         public string State { get; set; }
 
-        [Display(Name = "5-digit Zipcode:")]
+        //TODO: match international codes or change fields when country is chosen
+        [Display(Name = "Postal Code")]
         [RegularExpression(@"^\d{5}([\-]?\d{4})?$", ErrorMessage = "Invalid zipcode")]
         [Required(ErrorMessage = "Required")]
         public int PostalCode { get; set; }
+
+        [Required(ErrorMessage = "Required")]
+        [Display(Name = "Country:")]
+        public string CountryCode { get; set; }
+
+        public string ShippingMethod { get; set; }
     }
 }

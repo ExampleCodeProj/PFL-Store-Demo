@@ -24,8 +24,6 @@ body {
     display: inline;
     border: blue solid 1px;
     border-radius: 5%;
-
-    
 }
 a.card {
     margin: 5px;
@@ -52,4 +50,17 @@ a.card {
 .card-img-top {
     width: 100px;
     height: 100px;
+}
+
+.product-nav {
+ font-size: 14px;
+    overflow: hidden;
+
+    white-space: nowrap;
+
+}
+.design {
+    border: 3px black solid;
+    padding: 15px;
+    margin: 15px;
 }

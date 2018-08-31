@@ -1,24 +1,21 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using PflStoreProject.Models;
 using PflStoreProject.Models.BindingModels;
 using PflStoreProject.Models.ViewModels;
+using Item = PflStoreProject.Models.BindingModels.Item;
 
 namespace PflStoreProject.Controllers
 {
     public class ProductController : Controller
     {
         // TODO: pass in through DI
-        private HttpClientService _client = new HttpClientService();
+        private readonly HttpClientService _client = new HttpClientService();
 
 
         public IActionResult Index()
@@ -65,15 +62,39 @@ namespace PflStoreProject.Controllers
                     Error error = err.ToObject<Error>();
                     errorsList.Add(error);
                 }
+                
                 return View("Errors", errorsList);
             }
-            ProductDetail detail = queryableRes["results"]["data"].ToObject<ProductDetail>();
-            ProductDetailViewModel detailModel = new ProductDetailViewModel()
+            // set country property values to be used in selector control
+
+            IList<JToken> deliveredPricesTokens = queryableRes.SelectTokens("$.results.data.deliveredPrices").ToList();
+
+            List<DeliveredPrice> deliveredPriceList = new List<DeliveredPrice>();
+            foreach (JToken item in deliveredPricesTokens[0])
             {
-                Detail = detail
+                
+                DeliveredPrice deliveredPrice = item.ToObject<DeliveredPrice>();
+                if (deliveredPrice.LocationType == "domestic")
+                {
+                    deliveredPrice.Country = "USA";
+                }
+                else
+                {
+                    deliveredPrice.Country = deliveredPrice.Country ?? "Other";
+                }
+                deliveredPriceList.Add(deliveredPrice);
+                
+            }
+
+            IEnumerable<string> countries = deliveredPriceList.Select(p => p.Country).Distinct();
+            ProductDetail detail = queryableRes["results"]["data"].ToObject<ProductDetail>();
+            detail.DeliveredPrices = deliveredPriceList;
+            ProductDetailViewModel detailModel = new ProductDetailViewModel
+            {
+                Detail = detail,
+                Countries = countries
             };
             return View(detailModel);
-
         }
     }
 }
