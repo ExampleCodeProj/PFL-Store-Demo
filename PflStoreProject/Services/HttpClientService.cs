@@ -21,10 +21,10 @@ namespace PflStoreProject.Services
             //get credientials from json file, encode and set up HttpClient
             _config = config;
             string credentials = _config.GetValue<string>("Credentials");
-            string EncodedCredentials = Convert.ToBase64String(Encoding.ASCII.GetBytes(credentials));
+            string encodedCredentials = Convert.ToBase64String(Encoding.ASCII.GetBytes(credentials));
             client.BaseAddress= new Uri("https://testapi.pfl.com/");
             client.DefaultRequestHeaders.Authorization =
-                new AuthenticationHeaderValue("Basic", EncodedCredentials);
+                new AuthenticationHeaderValue("Basic", encodedCredentials);
             Client = client;
         }
 
@@ -41,7 +41,6 @@ namespace PflStoreProject.Services
                 var response = await Client.GetAsync($"products?id={id}&apikey=136085");
                 var stringResult = await response.Content.ReadAsStringAsync();
                 return stringResult;
-          
         }
 
         public async Task<JObject> SubmitOrder(Order order)

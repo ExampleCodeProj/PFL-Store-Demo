@@ -10,90 +10,103 @@
 
 
     <div class="row">
-        <div class="mt-5 col-sm-12 col-md-4 col-lg-4">
+        <div class="mt-5 pl-5 product-nav">
             <h4>Product List</h4>
-            <h6>(TODO: Nav by Category)</h6>
+            <h6 class="text-danger">(*Note: ideally, this should be a category filter)</h6>
             @await Component.InvokeAsync("ProductNav")
         </div>
-        <div class="container col-sm-12 col-md-8">
-            <form asp-action="CreateOrderItem" enctype="multipart/form-data" asp-controller="Order" method="post">
-                
-                <img src="@Model.Detail.ImageURL" alt="Alternate Text" />
-                <h4>@Model.Detail.Name</h4>
-                <h6>@Model.Detail.Description</h6>
-                @foreach (var location in Model.Detail.DeliveredPrices)
-                {
-                    if (Model.Detail.ShippingMethodDefault == location.DeliveryMethodCode)
-                    {
-                        <p id="price"><i>(example pricing: $@location.Price for @Model.Detail.QuantityDefault with domestic ground shipping)</i></p>
-                    }
-                }
-
-                        <div class="form-group">
-
-                            <label class="" asp-for="Item.Quantity">Enter Quantity:</label>
-                            <input class=" col-2 form-control" asp-for="Item.Quantity" type="number" max="@Model.Detail.QuantityMaximum" step="@Model.Detail.QuantityIncrement" value="@Model.Detail.QuantityMinimum" />
-                            <small>*Quantity Restrictions: Min @Model.Detail.QuantityMinimum/Max @Model.Detail.QuantityMaximum in increments of @Model.Detail.QuantityIncrement </small>
-                        </div>
-
-                <div class="design">
-                    <h4>How would you like to provide your custom design information</h4>
-
-                    <div class="design-email form-check">
-                        <input class="form-check-input" type="radio" asp-for="DesignOption" value="sendTemplate" checked />
-                        <label class="form-check-label">Send design file by email</label>
-                        <p class="design-information">Email your file along with your order confirmation to designcenter@example.com</p>
+        
+            
+                <div class="product-image-panel" width="500px">
+                    
+                        <img width="200px" class="product-image"src="@Model.Detail.ImageURL" alt="Alternate Text" />
+                  
                     </div>
-                    <div class="form-check design-file">
-                        <input class="form-check-input" type="radio" asp-for="DesignOption" value="designFile" id="designFile" />
-                        <label class="form-check-label" for="designFile">Upload your custom design </label>
-                        <input class="form-control-file" type="file" asp-for="Item.ItemFile" name="fileUpload" multiple />
+                    <div class="product-content-panel" width="200px">
+                        <form asp-action="CreateOrderItem" enctype="multipart/form-data" asp-controller="Order" method="post">
+                            <h4>@Model.Detail.Name</h4>
+                            <h6>@Model.Detail.Description</h6>
+                            @foreach (var location in Model.Detail.DeliveredPrices)
+                            {
+                                if (Model.Detail.ShippingMethodDefault == location.DeliveryMethodCode)
+                                {
+                                    <p id="price">Price:<i> starting at $@location.Price for quantity of @Model.Detail.QuantityDefault including domestic ground shipping</i></p>
+                                }
+                            }
+
+                            <div class="form-group">
+
+                                <label class="" asp-for="Item.Quantity">Enter Quantity:</label>
+                                <input class=" col-3 form-control" asp-for="Item.Quantity" type="number" max="@Model.Detail.QuantityMaximum" step="@Model.Detail.QuantityIncrement" value="@Model.Detail.QuantityMinimum" />
+                                <small>*Quantity Restrictions: Min @Model.Detail.QuantityMinimum/Max @Model.Detail.QuantityMaximum in increments of @Model.Detail.QuantityIncrement </small>
+                            </div>
+
+                            <div class="design">
+                                <h4>Custom Design</h4>
+                                <p>How would you like to provide your custom design information?</p>
+
+
+                                <div class="design-email form-check">
+                                    <input id="design-information" class="form-check-input" type="radio" asp-for="DesignOption" value="sendTemplate" checked/> Email your design
+                                    <label for="design-information" class="form-check-label">Email your file along with your order confirmation to designcenter@example.com</label>
+                  
+                                    
+                                </div>
+                                <div class="form-check design-file">
+                                    <input class="form-check-input" type="radio" asp-for="DesignOption" value="designFile" id="design-information" />Upload your custom design
+                                   
+                                        <label class="form-check-label" for="design-information"><input class="form-control-file" type="file" asp-for="Item.ItemFile" name="fileUpload" multiple /></label>
+                           
+                                </div>
+
+                                <div class="design-template form-check">
+                                    @if (Model.Detail.HasTemplate)
+                                    {
+                                        <input class="form-check-input" type="radio" asp-for="DesignOption" value="designTemplate" />
+                                        <label class="form-check-label">Enter template fields</label>
+                                        <div class="design-information">
+                                            <p class="design-instructions">Fill in the following fields to customize your order</p>
+                                        </div>
+                                    }
+                                    <b>We will review your files and send you a proof within one business day</b>
+                                </div>
+                            </div>
+
+                            <div class="shipping-options">
+                                <label for="countrySelector">Shipping Options:</label>
+                                <select id="countrySelector" name="countrySelector" class="form-control">
+                                    @foreach (var item in Model.Countries)
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                                </select>
+                                @foreach (var item in Model.Detail.DeliveredPrices)
+                                {
+                                    <ul class="">
+                                        <li class="deliveryMethods" name="@item.Country">
+                                            <input type="radio" name="DeliveryMethod" value="@item.DeliveryMethodCode"> @item.Description
+                                        </li>
+                                    </ul>
+                                }
+                            </div>
+
+
+
+
+
+
+                            <input type="hidden" asp-for="Item.ProductID" value="@Model.Detail.Id" />
+                            <input asp-for="Item.ProductName" type="hidden" value="@Model.Detail.Name" />
+                            <input asp-for="Detail.QuantityMinimum" type="hidden" value="@Model.Detail.QuantityMinimum" class="form-control" />
+                            <input asp-for="Detail.QuantityMaximum" type="hidden" value="@Model.Detail.QuantityMaximum ?? 'N/A'" class="form-control" />
+                            <input asp-for="Detail.QuantityIncrement" type="hidden" value="@Model.Detail.QuantityIncrement ?? 1" class="form-control" />
+                            <input asp-for="Item.ProductionDays" type="hidden" value="@Model.Detail.ProductionSpeeds[0].Days" class="form-control" />
+                            <input type="submit" value="Order" class="btn btn-default btn-block order-button" />
+
+
+
+                        </form>
                     </div>
-
-                    <div class="design-template form-check">
-                        @if (Model.Detail.HasTemplate)
-                        {
-                            <input class="form-check-input" type="radio" asp-for="DesignOption" value="designTemplate" />
-                            <label class="form-check-label">Enter template fields</label>
-                            <p class="design-instructions">Fill in the following fields to customize your order</p>
-
-                        }
-                        <h6>We will review your files and send you a proof within one business day</h6>
-                    </div>
-                </div>
-
-                <div class="shipping-options">
-                    <label for="countrySelector">Shipping Options:</label>
-                    <select id="countrySelector" name="ccountrySelector">
-                        @foreach (var item in Model.Countries)
-                        {
-                            <option value="@item">@item</option>
-                        }
-                    </select>
-                        @foreach(var item in Model.Detail.DeliveredPrices) { 
-                            <ul class="">
-                                    <li class="deliveryMethods" name="@item.Country">
-                                        <input type="radio" name="DeliveryMethod" value="@item.DeliveryMethodCode"> @item.Description
-                                    </li>
-                                </ul>
-                        }
-                    </div>
-             
-
-
-
-
-
-                <input type="hidden" asp-for="Item.ProductID" value="@Model.Detail.Id" />
-                <input asp-for="Item.ProductName" type="hidden" value="@Model.Detail.Name" />
-                <input asp-for="Detail.QuantityMinimum" type="hidden" value="@Model.Detail.QuantityMinimum" class="form-control" />
-                <input asp-for="Detail.QuantityMaximum" type="hidden" value="@Model.Detail.QuantityMaximum ?? 'N/A'" class="form-control" />
-                <input asp-for="Detail.QuantityIncrement" type="hidden" value="@Model.Detail.QuantityIncrement ?? 1" class="form-control" />
-                <input asp-for="Item.ProductionDays" type="hidden" value="@Model.Detail.ProductionSpeeds[0].Days" class="form-control" />
-                <input type="submit" value="Order" class="btn btn-default" />
-
-
-
-            </form>
-        </div>
-</div>
+            
+        
+   </div>  
