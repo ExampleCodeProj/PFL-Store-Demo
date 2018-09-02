@@ -2,12 +2,7 @@
 ViewData["Title"] = "Home Page";
 }
 
-@using System.Security.Permissions
-@using Microsoft.CodeAnalysis.CSharp.Syntax
-@using Remotion.Linq.Clauses.ResultOperators
-
 @model ProductDetailViewModel
-
 
 
 <div class="row">
@@ -71,15 +66,15 @@ ViewData["Title"] = "Home Page";
                         var path = Model.Detail.TemplateFields.Fieldlist.Field;
                         for (var i = 0; i < path.Count; i++)
                         {
-                            if (path[i].Required == "Y")
-                            {
 
-                                <span>*</span>
-                            }
                             <div class="form-group">
-                                <label for="@path[i].Htmlfieldname">@path[i].Htmlfieldname</label>
-                                <input type="hidden" name="Detail.TemplateFields.Fieldlist.Field[@i].Fieldname" value="@path[i].Htmlfieldname" />
-                                <input type="text" name="Detail.TemplateFields.Fieldlist.Field[@i].Htmlfieldname" id="@path[i].Htmlfieldname" />
+                                <label for="@path[i].Fieldname">@path[i].Fieldname                            @if (path[i].Required == "Y")
+                                    {
+
+                                    <span>(required)</span>
+                                    }</label>
+                                <input type="hidden" name="Detail.TemplateFields.Fieldlist.Field[@i].Htmlfieldname" value="@path[i].Htmlfieldname" />
+                                <input type="text" name="Detail.TemplateFields.Fieldlist.Field[@i].Fieldname" id="@path[i].Fieldname" />
                                 <input type="hidden" name="Detail.TemplateFields.Fieldlist.Field[@i].Required" value="@path[i].Required" />
                                 <input type="hidden" asp-for="@path[i].Type" value="@path[i].Type" />
                             </div>

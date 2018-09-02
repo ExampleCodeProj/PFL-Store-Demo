@@ -53,17 +53,17 @@ namespace PflStoreProject.Models.BindingModels
         public string Default { get; set; }
         public string Orgvalue { get; set; }
         public string Htmlfieldname { get; set; }
-        public Picklist Picklist { get; set; }
+//        public Picklist Picklist { get; set; }
     }
     public class Prompt
     {
         public string Language { get; set; }
         public string Text { get; set; }
     }
-    public class Picklist
-    {
-        public List<Item> Item { get; set; }
-    }
+//    public class Picklist
+//    {
+//        public List<Item> Item { get; set; }
+//    }
     public class Item
     {
         public Prompt Prompt { get; set; }
