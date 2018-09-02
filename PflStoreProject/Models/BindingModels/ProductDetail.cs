@@ -9,7 +9,6 @@ namespace PflStoreProject.Models.BindingModels
 {
     public class ProductDetail
     {
-        
         public int Id { get; set; }
 //        public object Sku { get; set; }
         public string Name { get; set; }
@@ -24,14 +23,13 @@ namespace PflStoreProject.Models.BindingModels
         public string ShippingMethodDefault { get; set; }
         // public object EmailTemplateId { get; set; }
         public bool HasTemplate { get; set; }
-//        public TemplateFields TemplateFields { get; set; }
+        public TemplateFields TemplateFields { get; set; }
         // public DateTime LastUpdated { get; set; }
         // public List<object> CustomValues { get; set; }
         public List<DeliveredPrice> DeliveredPrices { get; set; }
         public List<ProductionSpeed> ProductionSpeeds { get; set; }
 //        public string ProductFormat { get; set; }
 //        public object ProductRestrictionType { get; set; }
-
     }
 
     public class TemplateFields

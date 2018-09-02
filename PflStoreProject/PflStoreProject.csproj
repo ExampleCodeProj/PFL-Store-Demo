@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Compile Remove="Models\ProductDetailsViewModel.cs" />
+    <Compile Remove="Models\ViewModels\BillingVariable.cs" />
   </ItemGroup>
 
   <ItemGroup>

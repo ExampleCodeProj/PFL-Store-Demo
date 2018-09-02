@@ -8,14 +8,14 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using Newtonsoft.Json.Linq;
 using PflStoreProject.Infrastructure;
 using PflStoreProject.Models;
+using PflStoreProject.Models.ApiProductDetails;
 using PflStoreProject.Models.ViewModels;
 using PflStoreProject.Services;
 using Data = PflStoreProject.Models.Data;
-
+using Item = PflStoreProject.Models.ViewModels.Item;
 using OrderCustomer = PflStoreProject.Models.OrderCustomer;
 using Shipment = PflStoreProject.Models.Shipment;
 
@@ -41,20 +41,32 @@ namespace PflStoreProject.Controllers
 //                TODO: this should be set to final location
                 itemOrdered.Item.ItemFile = filePath;
             }
-            if(itemOrdered.DesignOption == "") { }
-
+            //if customer chose template option, capture the data, do validation and save to order item
+            if (itemOrdered.DesignOption == "designTemplate")
+            {
+                List<TemplateData> templateDataList = new List<TemplateData>();
+                foreach (var field in itemOrdered.Detail.TemplateFields.Fieldlist.Field)
+                {
+//                    TODO: add simplied template object into ProductDetailsViewModel
+//                    TODO: perform validation on fields
+                    TemplateData data = new TemplateData()
+                    {
+                        TemplateDataName = field.Fieldname,
+                        TemplateDataValue = field.Htmlfieldname,
+                    };
+                    templateDataList.Add(data);
+                }
+                itemOrdered.Item.TemplateData = templateDataList;
+            }
             // TODO: add validation -- min/max and increment for quantity
-            
-            //TODO: validate fileItem OR Template data depending on designMethod selected
-            
+            //Get all items out of session, convert back to Item objects, add new item, save back into session
+            //allows for future extensibility to add multiple items -- currently only one item can be ordered
             List<Item> items = HttpContext.Session.GetJson<List<Item>>("Items") ?? new List<Item>();
             HttpContext.Session.SetString("ShippingMethod", itemOrdered.DeliveryMethod);
             itemOrdered.Item.ItemSequenceNumber = items.Count() + 1;
             items.Add(itemOrdered.Item);
             HttpContext.Session.SetJson("Items", items);
             return RedirectToAction("ShipmentData");
-            
-
         }
 
         [HttpGet]
@@ -109,6 +121,7 @@ namespace PflStoreProject.Controllers
                 items = itemsList,
                 shipments = shipmentsList,
             };
+            
             try
             {
                 JObject response = await _client.SubmitOrder(order);
@@ -127,7 +140,8 @@ namespace PflStoreProject.Controllers
                 }
 
                 NewOrderPayload results = response["results"]["data"].ToObject<NewOrderPayload>();
-                return View("OrderConfirmation", results);
+                return Json(results);
+//                return View("OrderConfirmation", results);
             }
             catch (HttpRequestException e)
             {

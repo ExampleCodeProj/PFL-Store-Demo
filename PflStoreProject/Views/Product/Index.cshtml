@@ -5,25 +5,27 @@
 @model List<ProductViewModel>
 
 
+<div class="container products">
+    <h3 id="products-heading">Welcome! Select a product to get started...</h3>
+    <div class="product-list">
 
-
-
-<div class="row">
-  
         @foreach (var product in Model)
         {
+            <div class=" list-group-item">
+                <a  class="row" asp-controller="Product" asp-action="Show"asp-route-id="@product.ProductID">
+                    <div class="float-left product-block-heading">
+                        <h6 class="product-block-text">@product.Name</h6>
+                    </div>
+                    <span class="float-right product-block-image ">
+                        <img class="product-block-thumb img-fluid" src="@product.ImageUrl" class="" alt="Product Sample" style="max-height: 50px;">
+                    </span>
 
-            <a class="card col-sm-12 col-md-2 col-lg-2"  asp-action="Show" asp-controller="Product" asp-route-id="@product.ProductID">
-                <div  >
 
-                    <div class="card-body">
-                        
-                        <h6 class="card-subtitle mb-2 text-muted">@product.Description</h6>
-                        <img class="card-img-top" src="@product.ImageUrl" alt="Product Sample" />
-                        <h5 class="card-title">@product.Name</h5>
-                        </div>
-                </div>
-            </a>
+                </a>
+            </div>
+
         }
-    
+    </div>
 </div>
+
+
