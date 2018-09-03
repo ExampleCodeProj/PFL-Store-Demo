@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using PflStoreProject.Models.ViewModels;
 
-namespace PflStoreProject.Models.BindingModels
+namespace PflStoreProject.Models
 {
     public class ProductDetail
     {
@@ -64,9 +64,9 @@ namespace PflStoreProject.Models.BindingModels
 //    {
 //        public List<Item> Item { get; set; }
 //    }
-    public class Item
-    {
-        public Prompt Prompt { get; set; }
-        public string Value { get; set; }
-    }
+//    public class Item
+//    {
+//        public Prompt Prompt { get; set; }
+//        public string Value { get; set; }
+//    }
 }

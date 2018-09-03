@@ -5,14 +5,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\ApiProductDetails\**" />
+    <Compile Remove="Models\Delete\**" />
+    <Compile Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <Compile Remove="wwwroot\lib\bootstrap\**" />
+    <Content Remove="Models\ApiProductDetails\**" />
+    <Content Remove="Models\Delete\**" />
+    <Content Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <Content Remove="wwwroot\lib\bootstrap\**" />
+    <EmbeddedResource Remove="Models\ApiProductDetails\**" />
+    <EmbeddedResource Remove="Models\Delete\**" />
+    <EmbeddedResource Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <EmbeddedResource Remove="wwwroot\lib\bootstrap\**" />
+    <None Remove="Models\ApiProductDetails\**" />
+    <None Remove="Models\Delete\**" />
+    <None Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <None Remove="wwwroot\lib\bootstrap\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Models\ProductDetailsViewModel.cs" />
+    <Compile Remove="Models\ProductsDetail.cs" />
+    <Compile Remove="Models\Results.cs" />
     <Compile Remove="Models\ViewModels\BillingVariable.cs" />
   </ItemGroup>
 
@@ -21,11 +35,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="SampleData\Home Page - PflStoreProject.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\Delete\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 

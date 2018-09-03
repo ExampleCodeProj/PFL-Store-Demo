@@ -1,5 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
+﻿
 body {
 
     padding-bottom: 20px;
@@ -8,8 +7,7 @@ body, h4, h5, h6, p {
     font-family: Helvetica,Arial,sans-serif;
     
 }
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
+
 nav {
     background-color: #0471af;
 }
@@ -29,18 +27,17 @@ li.product-nav>a, li.product-nav{
     overflow: hidden;
     width:100%;
 }
-.card {
-    display: inline;
-    border: blue solid 1px;
-    border-radius: 5%;
-}
+/* .card { */
+/*     display: inline; */
+/*     border: blue solid 1px; */
+/*     border-radius: 5%; */
+/* } */
 
 
 .product-nav {
  font-size: 14px;
     white-space: nowrap;
     width: 18%;
-   
 }
 
 .design {
@@ -69,9 +66,7 @@ li.product-nav>a, li.product-nav{
     cursor: pointer;
 }
 .product-image{
-   
     width: 100%;
-   
 }
 #countrySelector {
     display: inline-block;
@@ -94,7 +89,7 @@ product-view {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;;
+    justify-content: center;
 }
 
 
@@ -109,7 +104,7 @@ product-view {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    /* justify-content: start; */
     align-items: center;
     padding-left: 5px;
 }
@@ -121,8 +116,8 @@ product-view {
 .product-block-text:hover {
     font-weight: 700;
     color: #0471Af;
-  
 }
+
 .product-block-text{
     font-weight: 600;
     color: #333;

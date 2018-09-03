@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using PflStoreProject.Infrastructure;
 using PflStoreProject.Models;
-using PflStoreProject.Models.BindingModels;
 using System.IO;
 using PflStoreProject.Models.ViewModels;
 using Newtonsoft.Json;

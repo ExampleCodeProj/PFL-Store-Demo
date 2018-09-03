@@ -17,7 +17,7 @@ namespace PflStoreProject.Models
             set;
         }
 
-        public OrderCustomerData OrderCustomer
+        public OrderCustomer OrderCustomer
         {
             get;
             set;

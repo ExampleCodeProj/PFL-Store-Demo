@@ -1,13 +1,9 @@
 ﻿// Item to bind to form
 
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
-using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
-namespace PflStoreProject.Models.ViewModels
+namespace PflStoreProject.Models
 {
 	public class Item
 	{

@@ -7,7 +7,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using PflStoreProject.Models.BindingModels;
 using PflStoreProject.Models.ViewModels;
 
 namespace PflStoreProject.Models.ViewModels

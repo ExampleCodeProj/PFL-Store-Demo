@@ -24,15 +24,6 @@ namespace PflStoreProject.Models
         [JsonProperty("duration")]
         public int Duration { get; set; }
     }
-    public class Results
-    {
-        [JsonProperty("errors")]
-        public List<object> Errors { get; set; }
-        [JsonProperty("messages")]
-        public List<object> Messages { get; set; }
-        [JsonProperty("data")]
-        public Data Data { get; set; }
-    }
     public class Data
     {
         [JsonProperty("id")]
@@ -77,32 +68,6 @@ namespace PflStoreProject.Models
         public string ProductFormat { get; set; }
         [JsonProperty("productRestrictionType")]
         public object ProductRestrictionType { get; set; }
-    }
-    public class DeliveredPrice
-    {
-        [JsonProperty("deliveryMethodCode")]
-        public string DeliveryMethodCode { get; set; }
-        [JsonProperty("description")]
-        public string Description { get; set; }
-        [JsonProperty("price")]
-        public double Price { get; set; }
-        [JsonProperty("country")]
-        public string Country { get; set; }
-        [JsonProperty("countryCode")]
-        public string CountryCode { get; set; }
-        [JsonProperty("created")]
-        public DateTime Created { get; set; }
-        [JsonProperty("locationType")]
-        public string LocationType { get; set; }
-        [JsonProperty("isDefault")]
-        public bool IsDefault { get; set; }
-    }
-    public class ProductionSpeed
-    {
-        [JsonProperty("days")]
-        public int Days { get; set; }
-        [JsonProperty("isDefault")]
-        public bool IsDefault { get; set; }
     }
 
 }

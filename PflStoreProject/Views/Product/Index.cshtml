@@ -4,26 +4,22 @@
 
 @model List<ProductViewModel>
 
-
-<div class="container products">
+<div class="container">
     <h3 id="products-heading">Welcome! Select a product to get started...</h3>
     <div class="product-list">
 
-        @foreach (var product in Model)
+        @foreach (ProductViewModel product in Model)
         {
             <div class=" list-group-item">
-                <a  class="row" asp-controller="Product" asp-action="Show"asp-route-id="@product.ProductID">
+                <a class="row" asp-controller="Product" asp-action="Show" asp-route-id="@product.ProductID">
                     <div class="float-left product-block-heading">
                         <h6 class="product-block-text">@product.Name</h6>
                     </div>
                     <span class="float-right product-block-image ">
-                        <img class="product-block-thumb img-fluid" src="@product.ImageUrl" class="" alt="Product Sample" style="max-height: 50px;">
+                        <img class="img-fluid" src="@product.ImageUrl" class="" alt="Product Sample" style="max-height: 50px;">
                     </span>
-
-
                 </a>
             </div>
-
         }
     </div>
 </div>

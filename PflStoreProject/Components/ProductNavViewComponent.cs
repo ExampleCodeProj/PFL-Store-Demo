@@ -9,6 +9,9 @@ using PflStoreProject.Services;
 
 namespace PflStoreProject.Components
 {
+//    ideally, this would extract distinct categories from product list to use as filtered navigation 
+//    currently lists all products as not suitable property to filter by
+    
     public class ProductNavViewComponent : ViewComponent
     {
         private HttpClientService _client;
@@ -18,9 +21,7 @@ namespace PflStoreProject.Components
             _client = client;
         }
 
-
         public IViewComponentResult Invoke()
-
         {
             var responseProducts = _client.GetProducts();
             string response = _client.GetProducts().Result;
@@ -33,7 +34,6 @@ namespace PflStoreProject.Components
                 productList.Add(product);
             }
             return View(productList);
-          
         }
     }
 }
