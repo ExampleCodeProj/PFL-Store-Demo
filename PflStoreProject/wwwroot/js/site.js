@@ -8,14 +8,13 @@ $(function() {
 
 
     var list = $('li.deliveryMethods');
+    $('.design-information').hide();
 
     function showMeths() {
         var list = $('li.deliveryMethods');
         list.each(function() {
             var defaultCountry = $('#countrySelector').val();
-
             var name = $(this).attr('name');
-
             if (name === defaultCountry) {
                 $(this).show();
             } else {
@@ -23,11 +22,20 @@ $(function() {
             }
         });
     }
-
-
     showMeths();
-
-
     $('#countrySelector').change(showMeths);
+
+
+    
+
+ 
+    $('input.design-radio').on('click',
+        function () {
+            $('.design-information').hide();
+            $("input:checked").nextAll('div.design-information').show();
+            
+        }
+    );
+
 
 });

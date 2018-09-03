@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -18,8 +19,12 @@ namespace PflStoreProject.Models.ViewModels
 
         public Item Item { get; set; }
 
+        [Required(ErrorMessage = "Please select a shipping method.")]
         public string DeliveryMethod { get; set; }
+
+        [Required(ErrorMessage= "Please select an option.")]
         public string DesignOption { get; set; }
+
         public IEnumerable<string> Countries { get; set; }
 
     }

@@ -1,48 +1,34 @@
 ﻿@model NewOrderPayload
 
 
-Your Order Has Been Submitted:
-<h2>@Model.OrderNumber</h2>
-<table>
-    <tr>
-        <th>Item ID</th>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        
-    </tr>
-    <tr>
-        @foreach (var item in @Model.Items)
-        {
-            <td>@item.ProductID</td>
-            <td>@item.ProductName</td>
+<h1>Thank you for your order</h1>
+<h4>Order number is: @Model.OrderNumber</h4>
 
-            <td>@item.Quantity</td>
+
            
 
-     } 
-    </tr>
-</table>
 
-
-<address>
-    <p>@Model.OrderCustomer.FirstName @Model.OrderCustomer.LastName</p>
-    <p>@Model.OrderCustomer.Email</p>
-    <p>@Model.OrderCustomer.Phone</p>
-</address>
+<div class="address-block">
+    <h4>Billed To:</h4>
+    <address>
+        @Model.OrderCustomer.FirstName @Model.OrderCustomer.LastName <br/>
+        @Model.OrderCustomer.Email <br/>
+        @Model.OrderCustomer.Phone <br/>
+    </address>
+</div>
 
 
 <h4>Your oder production time is @Model.</h4>
-<h3>Shipping To:</h3>
-<address>
-    @foreach (var shipment in @Model.Shipments)
-    {
-        <p>@shipment.FirstName @shipment.LastName</p>
-        <p>@shipment.CompanyName</p>
-        <p>@shipment.Address1</p>
-        <p>@shipment.Address2</p>
-        <p>@shipment.City, @shipment.State @shipment.PostalCode</p>
-        <p>@shipment.CountryCode</p>
+<div class="address-block">
+    <h4>Shipping To:</h4>
+    <address>
 
-    }
-</address>
+        @Model.Shipments[0].FirstName @Model.Shipments[0].LastName <br/>
+        @Model.Shipments[0].CompanyName <br/>
+        @Model.Shipments[0].Address1
+        @Model.Shipments[0].Address2 <br/>
+        @Model.Shipments[0].City, @Model.Shipments[0].State @Model.Shipments[0].PostalCode <br/>
+        @Model.Shipments[0].CountryCode <br/>
+    </address>
+</div>
+<h4>Order Summary</h4>

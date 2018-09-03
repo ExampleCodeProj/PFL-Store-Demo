@@ -53,7 +53,7 @@ namespace PflStoreProject.Controllers
             }
         }
 
-
+        [HttpGet]
         public IActionResult Show(string id)
         {
             string rawResults = _client.GetProductById(id).Result;
@@ -102,5 +102,7 @@ namespace PflStoreProject.Controllers
             };
             return View(detailModel);
         }
+
+        
     }
 }
