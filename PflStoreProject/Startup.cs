@@ -42,7 +42,7 @@ namespace PflStoreProject
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Shared/Errors");
                 app.UseHsts();
             }
 
