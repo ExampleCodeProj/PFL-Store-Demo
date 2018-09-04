@@ -1,41 +1,35 @@
 ﻿
 body {
-
+    color: #5d5d5d;
     padding-bottom: 20px;
 }
+
 body, h4, h5, h6, p {
     font-family: Helvetica,Arial,sans-serif;
-    
 }
 
 nav {
     background-color: #0471af;
 }
 
- li, ul {
-     list-style: none;
- 
+li, ul {
+    list-style: none;
 }
+
 #bad-request {
     margin: 100px auto;
     text-align: center;
-    
 }
-li.product-nav>a, li.product-nav{
+
+li.product-nav > a, li.product-nav {
     color: #5d5d5d;
     text-overflow: clip;
     overflow: hidden;
-    width:100%;
+    width: 100%;
 }
-/* .card { */
-/*     display: inline; */
-/*     border: blue solid 1px; */
-/*     border-radius: 5%; */
-/* } */
-
 
 .product-nav {
- font-size: 14px;
+    font-size: 14px;
     white-space: nowrap;
     width: 18%;
 }
@@ -49,25 +43,28 @@ li.product-nav>a, li.product-nav{
 
 .product-content-panel {
     border: 1px solid #e3e5e8;
-    width: 35%;
-    padding: 30px;
-    margin: 40px auto;
+    width: 45%;
+    padding: 20px;
+    margin-top: 40px;
     height: fit-content;
 }
+
 .product-image-panel {
     width: 35%;
     display: inline-block;
     padding: 1% 0 1% 2%;
     margin: 2% 0 2% 2%;
-
 }
+
 .order-button {
     background-color: #338700;
     cursor: pointer;
 }
-.product-image{
+
+.product-image {
     width: 100%;
 }
+
 #countrySelector {
     display: inline-block;
     width: fit-content;
@@ -76,9 +73,7 @@ li.product-nav>a, li.product-nav{
 product-view {
     display: inline;
 }
-/* .design-information { */
-/*     display: none; */
-/*   } */
+
 #products-heading {
     margin: 20px 0 20px 0;
     color: #0471Af;
@@ -92,48 +87,65 @@ product-view {
     justify-content: center;
 }
 
-
-
 .list-group-item {
     margin: 5px;
     width: 330px;
     height: 75px;
     cursor: pointer;
 }
+
 .product-block-heading {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: start; */
     align-items: center;
     padding-left: 5px;
 }
+
 .product-block-image {
     width: 25%;
     text-align: center;
 }
- 
+
 .product-block-text:hover {
     font-weight: 700;
     color: #0471Af;
 }
 
-.product-block-text{
+.product-block-text {
     font-weight: 600;
-    color: #333;
-    
+    color: #5d5d5d;
 }
+
 a, a:hover {
     text-decoration: none;
 }
 
+.top-section {
+    width: 100%;
+}
+
 .address-block {
     display: inline-block;
-    width: 50%;
+    width: 400px;
+    vertical-align: top;
+    margin-right: 5px
 }
+
 address {
     border: #e3e5e8 solid 1px;
-    display: inline-block;
-    width: 40%
-       
+    vertical-align: top;
+    width: 100%;
+    height: 200px;
+    padding: 15px
+}
+
+.bottom-section {
+    border: #e3e5e8 solid 1px;
+    width: 809px;
+    height: 200px
+}
+
+.alert {
+    width: 809px;
 }

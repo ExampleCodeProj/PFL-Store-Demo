@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>b06d6043-743f-44c4-830b-66a8faa89a8e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,6 +33,8 @@
 
   <ItemGroup>
     <Content Remove="Views\Product\Show - Copy.cshtml" />
+    <Content Remove="wwwroot\css\site.min.css" />
+    <Content Remove="wwwroot\js\site.min.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,6 +53,9 @@
 
   <ItemGroup>
     <Content Update="Views\Order\ShipmentData.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Test\OrderConfirmation.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

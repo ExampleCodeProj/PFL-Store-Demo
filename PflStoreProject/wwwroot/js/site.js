@@ -10,6 +10,8 @@ $(function() {
     var list = $('li.deliveryMethods');
     $('.design-information').hide();
 
+
+
     function showMeths() {
         var list = $('li.deliveryMethods');
         list.each(function() {
@@ -36,6 +38,11 @@ $(function() {
             
         }
     );
+    var minimum = $("#min").val();
+    console.log(minimum);
+    var maximum = $("#max").val();
+    var increment = $("#step").val();
+    
 
 
 });

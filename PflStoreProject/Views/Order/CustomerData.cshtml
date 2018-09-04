@@ -5,10 +5,8 @@
 
 
 
-
-<div class="page">
-    <h4>Customer Information</h4>
-
+<div class="container">
+    <h4 class="mt-3">Customer Information</h4>
     <p class="heading-text">Please enter the billing name and contact information for this order. Fields marked with <font color="#cc3300">*</font> are required.</p>
     <div class="col-md-6">
         <form class="form-panel" asp-action="CustomerData" asp-controller="Order" method="POST">
@@ -378,8 +376,6 @@
             </div>
         </form>
     </div>
-</div>
-
-<div>
     <a asp-action="Index" asp-controller="Product">Back to Store</a>
 </div>
+

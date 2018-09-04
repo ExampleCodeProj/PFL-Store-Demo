@@ -30,7 +30,7 @@ namespace PflStoreProject.Models
         [Display(Name = "Phone:")]
         public long? Phone { get; set; }
 
-        [Required(ErrorMessage = "Required.")]
+        
         [Display(Name = "Email:")]
         [EmailAddress(ErrorMessage = "Invalid email address.")]
         public string Email { get; set; }

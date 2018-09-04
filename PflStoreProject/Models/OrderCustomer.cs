@@ -1,6 +1,6 @@
 ﻿//submit to API
 
-
+using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
 namespace PflStoreProject.Models
@@ -27,6 +27,7 @@ namespace PflStoreProject.Models
         public string CountryCode { get; set; }
         [JsonProperty("email")]
         public string Email { get; set; }
+        [DisplayFormat(DataFormatString = "{000-000-0000}", ApplyFormatInEditMode = true)]
         [JsonProperty("phone")]
         public string Phone { get; set; }
     }

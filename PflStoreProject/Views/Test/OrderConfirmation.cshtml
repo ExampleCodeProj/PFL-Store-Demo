@@ -2,20 +2,14 @@
 
 <div class="container">
     <h1 class="mt-5 mb-3">Thank you for your order</h1>
-    <h4 class="mb-5"><b>Order number is: @Model.OrderNumber</b></h4>
+    <h4 class="mb-5">Order number is: @Model.OrderNumber</h4>
     <div class="top-section">
         <div class="address-block">
             <h4>Billed To:</h4>
             <address>
                 @Model.OrderCustomer.FirstName @Model.OrderCustomer.LastName <br />
-                @if (Model.OrderCustomer.CompanyName != null)
-                {
-                    @Model.OrderCustomer.CompanyName
-                    <br />
-                }
                 @Model.OrderCustomer.Email <br />
-                @Model.OrderCustomer.Address1 @Model.OrderCustomer.Address2 <br />
-                @Model.OrderCustomer.City, @Model.OrderCustomer.State @Model.OrderCustomer.PostalCode<br />
+                @Model.OrderCustomer.Phone <br />
             </address>
         </div>
         <div class="address-block">
@@ -24,14 +18,13 @@
                 @Model.Shipments[0].FirstName @Model.Shipments[0].LastName <br />
                 @if (Model.Shipments[0].CompanyName != null)
                 {
-                    @Model.Shipments[0].CompanyName
+                    @Model.Shipments[0].CompanyName 
                     <br />
                 }
                 @Model.Shipments[0].Address1
                 @Model.Shipments[0].Address2 <br />
                 @Model.Shipments[0].City, @Model.Shipments[0].State @Model.Shipments[0].PostalCode <br />
                 @Model.Shipments[0].CountryCode <br />
-                Phone: @Model.Shipments[0].Phone <br />
             </address>
         </div>
     </div>
@@ -40,11 +33,11 @@
 
         <table class="table">
             <thead>
-                <tr>
-                    <th>Item Number</th>
-                    <th>Quantity</th>
-                    <th>Product Name</th>
-                </tr>
+            <tr>
+                <th>Item Number</th>
+                <th>Quantity</th>
+                <th>Product Name</th>
+            </tr>
             </thead>
             <tr>
                 <td>@Model.Items[0].ProductID </td>
@@ -55,14 +48,10 @@
     </div>
     @if (Model.Items[0].TemplateData != null)
     {
-        <h4 class="mt-5">Custom Design Template Fields:</h4>
-        <div class="alert alert-warning">
-            <h6 class="mt-3"><b>IMPORTANT : </b>Please review the following template information carefully.</h6>
-            <h6 class="mb-3">If you have any changes, contact us within 24 hours at 1-800-555-OOPS</h6>
-        </div>
+
         foreach (var item in Model.Items[0].TemplateData)
         {
-            <p>@item.TemplateDataName: @item.TemplateDataValue</p>
+           <p>@item.TemplateDataName: @item.TemplateDataValue</p>
         }
     }
 </div>

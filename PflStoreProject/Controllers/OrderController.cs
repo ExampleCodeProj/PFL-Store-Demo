@@ -28,17 +28,19 @@ namespace PflStoreProject.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateOrderItem(ProductDetailViewModel itemOrdered, IFormFile fileUpload)
+        public IActionResult CreateOrderItem(ProductDetailViewModel itemOrdered, IFormFile fileUpload)
         {
 //            Processing determined by user radio button selection of Design Options
+
             if (itemOrdered.DesignOption == "designFile")
             {
 //               TODO: Process uploaded file and store in Blob storage, create uniqe name, send alert email to design department
-                string filePath = Path.GetTempFileName();
-                using (FileStream stream = new FileStream(filePath, FileMode.Create))
-                    await fileUpload.CopyToAsync(stream);
+//               TODO: add validation for file upload
+//                string filePath = Path.GetTempFileName();
+//                using (FileStream stream = new FileStream(filePath, FileMode.Create))
+//                    await fileUpload.CopyToAsync(stream);
 //                TODO: change to final location of file
-                itemOrdered.Item.ItemFile = filePath;
+//                itemOrdered.Item.ItemFile = filePath;
                 
             }
 
@@ -52,8 +54,8 @@ namespace PflStoreProject.Controllers
 //                    TODO: perform validation on fields
                     TemplateData data = new TemplateData
                     {
-                        TemplateDataName = field.Fieldname,
-                        TemplateDataValue = field.Htmlfieldname
+                        TemplateDataName = field.Htmlfieldname,
+                        TemplateDataValue = field.Fieldname
                     };
                     templateDataList.Add(data);
                 }

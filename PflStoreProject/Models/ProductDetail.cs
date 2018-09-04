@@ -18,7 +18,7 @@ namespace PflStoreProject.Models
         // public List<object> Files { get; set; }
         public int QuantityDefault { get; set; } = 1;
         public int? QuantityMinimum { get; set; } = 1;
-        public int? QuantityMaximum { get; set; }
+        public int? QuantityMaximum { get; set; } = int.MaxValue;
         public int? QuantityIncrement { get; set; } = 1;
         public string ShippingMethodDefault { get; set; }
         // public object EmailTemplateId { get; set; }

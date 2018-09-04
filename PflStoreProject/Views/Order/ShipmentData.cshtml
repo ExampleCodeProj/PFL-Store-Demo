@@ -1,14 +1,12 @@
 ﻿@model ShipmentDataViewModel
 @{
-    ViewData["Title"] = "Customer Information";
+    ViewData["Title"] = "Shipping Information";
 }
 
 
-<div class="page">
-    <h4>Shipping Information</h4>
-
-    <p class="heading-text">Please enter recipient's contact and shipping information.. Fields marked with <font color="#cc3300">*</font> are required.</p>
-
+<div class="container">
+<h4 class="mt-3">Shipping Information</h4>
+    <p class="heading-text">Please enter recipient's contact and shipping information. Fields marked with <font color="#cc3300">*</font> are required.</p>
 
     <div class="col-md-6">
         <form class="form-panel" asp-action="ShipmentData" asp-controller="Order" method="POST">
@@ -34,7 +32,7 @@
                 <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <font color="#cc3300">*</font> <label asp-for="Email" class="control-label"></label>
+                <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
@@ -380,8 +378,6 @@
             </div>
         </form>
     </div>
-</div>
-
-<div>
     <a asp-action="Index" asp-controller="Product">Back to Store</a>
 </div>
+

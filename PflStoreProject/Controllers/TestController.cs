@@ -129,24 +129,25 @@ namespace PflStoreProject.Controllers
         
         public IActionResult OrderSubmit()
         {
-            string path = @"C:\Users\bethh\source\repos\PflStoreProject\PflStoreProject\SampleData\BadSubmitOrder.json";
+            string path = @"C:\Users\bethh\source\repos\PflStoreProject\PflStoreProject\SampleData\SubmitOrderTemplate_success.json";
             string textAsStr = System.IO.File.ReadAllText(path);
             JObject queryable = JObject.Parse(textAsStr);
-            if (queryable["results"]["errors"].Count() > 1)
-            {
-                IList<JToken> errors = queryable["results"]["errors"].Children().ToList();
-                List<Error> errorsList = new List<Error>();
-                foreach (JToken err in errors)
-                {
-                    Error error = err.ToObject<Error>();
-                    errorsList.Add(error);
-                }
-                return View("Errors", errorsList);
-            }
-            else
-            {
+//            if (queryable["results"]["errors"].Count() > 1)
+//            {
+//                IList<JToken> errors = queryable["results"]["errors"].Children().ToList();
+//                List<Error> errorsList = new List<Error>();
+//                foreach (JToken err in errors)
+//                {
+//                    Error error = err.ToObject<Error>();
+//                    errorsList.Add(error);
+//                }
+//                return View("Errors", errorsList);
+//            }
+//            else
+//            {
 
-                NewOrderPayload results = queryable["results"]["data"].ToObject<NewOrderPayload>();
+//                NewOrderPayload results = queryable["results"]["data"].ToObject<NewOrderPayload>();
+                NewOrderPayload results = queryable.ToObject<NewOrderPayload>();
 
 
                 return View("OrderConfirmation", results);
@@ -158,7 +159,7 @@ namespace PflStoreProject.Controllers
 
     }
 
-}
+
 //if (queryable["results"]["errors"].Count() > 1)
 //{
 //IList<JToken> errors = queryable["results"]["errors"].Children().ToList();
