@@ -4,13 +4,36 @@
 // Write your JavaScript code.
 
 
-$(function() {
-
+$().ready(function() {
 
     var list = $('li.deliveryMethods');
     $('.design-information').hide();
 
-
+ 
+    $('#item-form').validate({
+        rules: {
+            quantity: {
+                required: true,
+                min: function() {
+                    return parseInt($('#min').val());
+                },
+                max: function () {
+                    if ($('#max').val() > 0) {
+                        return parseInt($('#max').val());
+                    } else {
+                        return 1000000000
+                    }},
+                
+                step: function () {
+                    if ($('step').val() > 1) {
+                        return parseInt($('#step').val());
+                    } else {
+                        return 1;
+                    }
+                }
+            }
+        }
+    });
 
     function showMeths() {
         var list = $('li.deliveryMethods');
@@ -38,11 +61,7 @@ $(function() {
             
         }
     );
-    var minimum = $("#min").val();
-    console.log(minimum);
-    var maximum = $("#max").val();
-    var increment = $("#step").val();
-    
+
 
 
 });

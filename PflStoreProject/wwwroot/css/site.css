@@ -149,3 +149,8 @@ address {
 .alert {
     width: 809px;
 }
+
+#quantity-error {
+    display: block;
+    color: #dc3545;
+}
