@@ -31,7 +31,6 @@ namespace PflStoreProject.Components
             foreach (JToken token in results)
             {
                 ProductViewModel product = token.ToObject<ProductViewModel>();
-                productList.Add(product);
             }
             return View(productList);
         }

@@ -20,28 +20,30 @@ namespace PflStoreProject.Controllers
     public class OrderController : Controller
     {
         private readonly HttpClientService _client;
-
+        
         public OrderController(HttpClientService client)
         {
             _client = client;
         }
 
-
+//        blob client service "DesignStore" is injected to this action only so not recreated every call to controller
         [HttpPost]
-        public IActionResult CreateOrderItem(ProductDetailViewModel itemOrdered, IFormFile fileUpload)
+        public async Task<IActionResult> CreateOrderItem([FromServices]DesignStore designStore,  ProductDetailViewModel itemOrdered, IFormFile fileUpload, Int16 quantity)
         {
+//            TODO: serverside validate quantity
+            itemOrdered.Item.Quantity = quantity;
 //            Processing determined by user radio button selection of Design Options
-
             if (itemOrdered.DesignOption == "designFile")
             {
-//               TODO: Process uploaded file and store in Blob storage, create uniqe name, send alert email to design department
 //               TODO: add validation for file upload
-//                string filePath = Path.GetTempFileName();
-//                using (FileStream stream = new FileStream(filePath, FileMode.Create))
-//                    await fileUpload.CopyToAsync(stream);
-//                TODO: change to final location of file
-//                itemOrdered.Item.ItemFile = filePath;
-                
+                if (fileUpload != null)
+                {
+                    using (var stream = fileUpload.OpenReadStream())
+                    {
+                        var fileUrl = await designStore.SaveFile(stream);
+                        itemOrdered.Item.ItemFile = fileUrl;
+                    }
+                }
             }
 
 //            if customer chose template option, capture the data, validate and save to order item
@@ -153,8 +155,9 @@ namespace PflStoreProject.Controllers
                 }
 
                 HttpContext.Session.Clear();
-                NewOrderPayload results = queryableResponse["results"]["data"].ToObject<NewOrderPayload>();
-                return View("OrderConfirmation", results);
+                NewOrderPayload orderData = queryableResponse["results"]["data"].ToObject<NewOrderPayload>();
+                
+                return View("OrderConfirmation", orderData);
             }
             catch (HttpRequestException e)
             {
@@ -167,6 +170,7 @@ namespace PflStoreProject.Controllers
                 return View("BadRequest", msg);
             }
         }
+
     }
 }
 

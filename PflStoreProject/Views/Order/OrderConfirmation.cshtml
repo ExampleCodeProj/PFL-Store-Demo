@@ -1,5 +1,7 @@
 ﻿@model NewOrderPayload
 
+
+
 <div class="container">
     <h1 class="mt-5 mb-3">Thank you for your order</h1>
     <h4 class="mb-5"><b>Order number is: @Model.OrderNumber</b></h4>
@@ -44,12 +46,15 @@
                     <th>Item Number</th>
                     <th>Quantity</th>
                     <th>Product Name</th>
+                    <th>Design File</th>
                 </tr>
             </thead>
             <tr>
                 <td>@Model.Items[0].ProductID </td>
                 <td>@Model.Items[0].Quantity </td>
                 <td>@Model.Items[0].ProductName </td>
+                <td><a href="@Model.Items[0].ItemFile" target="_blank">Uploaded File</a></td>
+                
             </tr>
         </table>
     </div>

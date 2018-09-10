@@ -16,7 +16,7 @@ namespace PflStoreProject.Services
 
         public HttpClientService(HttpClient client, IConfiguration config)
         {
-            //get credientials from json file, encode and set up HttpClient
+//            get credientials from json file, encode and set up HttpClient
             _config = config;
             string credentials = _config.GetValue<string>("Credentials");
             string encodedCredentials = Convert.ToBase64String(Encoding.ASCII.GetBytes(credentials));

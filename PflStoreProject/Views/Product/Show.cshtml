@@ -8,21 +8,21 @@
 <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 <script src="/js/site.js"></script>
 
-
 <div class="container">
+
     <div class="row">
-        <div class="mt-5 product-nav">
+        <div class="mt-5 product-nav col-12 col-sm-12 col-md-4 col-lg-2">
             <h4>Product List</h4>
             <h6 class="text-danger">(*Note: this should be filter)</h6>
             @await Component.InvokeAsync("ProductNav")
         </div>
 
-        <div class="product-image-panel" width="500px">
+        <div class="product-image-panel col-12 col-sm-12 col-md-6 col-lg-4" >
             <small>Item # @Model.Detail.Id</small>
             <h4>@Model.Detail.Name</h4>
             <img class="product-image" src="@Model.Detail.ImageURL" alt="Alternate Text" />
         </div>
-        <div class="product-content-panel float-right">
+        <div class="product-content-panel ml-3 col-12 col-sm-12 col-md-10 col-lg-5">
             <form id="item-form" asp-action="CreateOrderItem" enctype="multipart/form-data" asp-controller="Order" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <h6>@Model.Detail.Description</h6>
@@ -61,7 +61,7 @@
 
                         <div class="design-information form-check-label" for="design-information">
                             <input class="form-control-file" type="file"
-                                   asp-for="Item.ItemFile" multiple />
+                                  name="fileUpload" multiple />
                         </div>
                     </div>
                     <div class="form-check mt-3">
@@ -142,6 +142,6 @@
             </form>
         </div>
     </div>
-</div>
 
+</div>
 

@@ -28,6 +28,7 @@ namespace PflStoreProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient<HttpClientService>();
+            services.AddTransient<DesignStore>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddMvcOptions(opts => opts.ModelBindingMessageProvider.SetValueIsInvalidAccessor( value=> "Please enter a valid value"));
             services.AddMemoryCache();
             services.AddSession();

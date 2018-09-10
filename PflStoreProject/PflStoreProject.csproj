@@ -7,19 +7,15 @@
 
   <ItemGroup>
     <Compile Remove="Models\ApiProductDetails\**" />
-    <Compile Remove="Models\Delete\**" />
     <Compile Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <Compile Remove="wwwroot\lib\bootstrap\**" />
     <Content Remove="Models\ApiProductDetails\**" />
-    <Content Remove="Models\Delete\**" />
     <Content Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <Content Remove="wwwroot\lib\bootstrap\**" />
     <EmbeddedResource Remove="Models\ApiProductDetails\**" />
-    <EmbeddedResource Remove="Models\Delete\**" />
     <EmbeddedResource Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <EmbeddedResource Remove="wwwroot\lib\bootstrap\**" />
     <None Remove="Models\ApiProductDetails\**" />
-    <None Remove="Models\Delete\**" />
     <None Remove="SampleData\Home Page - PflStoreProject_files\**" />
     <None Remove="wwwroot\lib\bootstrap\**" />
   </ItemGroup>
@@ -48,7 +44,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Delete\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
